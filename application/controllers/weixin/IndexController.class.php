@@ -1,0 +1,1 @@
+<?php// 文章模型控制器require 'vendor/autoload.php';use EasyWeChat\Foundation\Application;use EasyWeChat\Message\Text;class IndexController extends BaseController{     //新浪微博    public function __construct()    {        ob_end_clean();    }}

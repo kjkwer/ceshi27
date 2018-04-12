@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<?php include CUR_VIEW_PATH."public/head.html"?>
+</head>
+
+<body class="body-color">
+	<header>
+		<?php include CUR_VIEW_PATH."public/header.html"?>
+
+	</header>
+	<!--侧边菜单栏-->
+	<aside class="side-nav">
+		<?php include CUR_VIEW_PATH."public/aside.html"?>
+	</aside>
+	<!--侧边菜单栏 end-->
+
+	<!--主体部分-->
+	<section class="body-content">
+		<!--当前位置-->
+		<div class="site-location">
+			&nbsp;&nbsp;
+			<span class="ficon ficon-weizhi"></span>&nbsp;<a href="index.php?p=admin&c=index&a=index">用户首页</a>
+			&nbsp;&gt;&nbsp;<a href="index.php?p=admin&c=canshu&a=index">参数管理</a>
+		</div>
+		<p class="silo_zw"></p>
+		<!--当前位置 end-->
+<!--筛选条件-->
+			<div class="filter">
+				<div class="filter-right">
+				    <a href="/index.php?p=admin&c=canshu&a=indextree" class="btn btn-green"> <em class="ficon ficon-fenxiao"></em>树状图</a>
+				
+					<a href="/index.php?p=admin&c=canshu&a=add&classid=<?php echo $classid  ;?>" class="btn btn-green"> <em class="ficon ficon-tianjia"></em> 添加</a>
+				</div>
+				<br />
+			</div>
+			<br />
+			<!--筛选条件 end-->
+			
+			<!--文章table-->
+			<table class="table table-border table-hover" id="content">
+				<thead>
+				<tr>
+                    <th  style="width:80px">编号</th>
+					<th>参数名称</th>
+					<th>参数类型</th>
+                    <th  style="width:80px">排序</th>
+					<th>操作</th>
+				</tr>
+				</thead>
+				<tbody>
+		<?php foreach($canshu as $v){ ?>
+
+
+       
+				<tr>
+				   
+					<td>
+						<?php echo $v['id'] ?>
+					</td>
+					<td style="text-align: left;"><a href="index.php?p=admin&c=canshu&classid=<?php echo $v['id'] ?>"><?php echo $v['u1'] ?></a></td>
+					<td>
+					   <?php if($v['classid']==0){ ?>
+                        <a href="index.php?p=admin&c=canshu&a=index&classid=<?php echo $v['id'] ?>">顶级</a>
+                         <?php }else{ ?>
+                        <a href="index.php?p=admin&c=canshu&a=index&classid=<?php echo $v['id'] ?>"><?php echo $v['classname'] ?></a>
+                        <?php } ?>
+						
+						
+					</td>
+					
+                    <td>
+						<?php echo $v['u4'] ?>
+					</td>
+       
+					<td>
+                        <a href="index.php?p=admin&c=canshu&a=edit&id=<?php echo $v['id'] ?>" title="编辑" class="operation"><span class="ficon ficon-xiugai"></span></a>
+						<a href="index.php?p=admin&c=canshu&a=add&classid=<?php echo $v['id'] ?>" title="添加子类" class="operation"><span class="ficon ficon-zoomout"></span></a>
+						<a  onclick="return confirm('你确认将该频道删除到回收站?\r\n注意：相关栏目和内容也将一起删除到回收站');" id="repChannel_ctl01_btnDelete" href="index.php?p=admin&c=canshu&a=delete&id=<?php echo $v['id'] ?>" title="删除" class="operation"><span class="ficon  ficon-shanchu"></span></a>
+					</td>
+					
+				</tr>
+          <?php  } ?>
+
+				</tbody>
+			</table>
+			<!--文章table  end-->
+			
+
+
+<footer>
+	<?php include CUR_VIEW_PATH."public/footer.html"?>
+</footer>
+</section>
+
+<p class="clear"></p>
+
+<script src="application/views/admin/js/wow.min.js" type="text/javascript"></script>
+<script src="application/views/admin/js/common.js" type="text/javascript"></script>
+
+<!--wow 初始化-->
+<script>
+	if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+		new WOW().init();
+	};
+</script>
+</body>
+
+</html>

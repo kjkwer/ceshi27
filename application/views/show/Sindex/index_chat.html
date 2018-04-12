@@ -1,0 +1,27 @@
+<?php
+echo 1;die;
+include  'vendor/autoload.php'; // 引入 composer 入口文件
+
+use EasyWeChat\Foundation\Application;
+
+$options = [
+    'debug'  => true,
+'app_id' => 'wx5675bb02d45a733d',
+'secret' => 'a5cc951f46ec16ae65a9b2b57cfc1c2a',
+'token'  => 'easywechat',
+
+// 'aes_key' => null, // 可选
+
+
+
+//...
+];
+
+$app = new Application($options);
+
+$response = $app->server->serve();
+
+// 将响应输出
+$response->send(); // Laravel 里请使用：return $response;
+
+?>

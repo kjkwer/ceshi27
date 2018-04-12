@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<?php include CUR_VIEW_PATH."public/head.html"?>
+</head>
+
+<body class="body-color">
+	<header>
+		<?php include CUR_VIEW_PATH."public/header.html"?>
+
+	</header>
+	<!--侧边菜单栏-->
+	<aside class="side-nav">
+		<?php include CUR_VIEW_PATH."public/aside.html"?>
+	</aside>
+	<!--侧边菜单栏 end-->
+
+	<!--主体部分-->
+	<section class="body-content">
+		<!--当前位置-->
+		<div class="site-location">
+			&nbsp;&nbsp;
+			<span class="ficon ficon-weizhi"></span>&nbsp;<a href="index.php?p=admin&c=index&a=index">用户首页</a>
+			&nbsp;&gt;&nbsp;<a href="index.php?p=admin&c=moxing&a=index">模型管理</a>
+			&nbsp;&gt;&nbsp;<a href="index.php?p=admin&c=sort&a=index&model_id=<?php echo $_GET['model_id'] ?>">分类管理</a>
+			&nbsp;&gt;&nbsp;<a href="#">文章管理</a>  <?php echo $curSortNames ?>
+		</div>
+		
+		<!--当前位置 end-->
+		<br/>
+		
+		<!--筛选条件-->
+<div class="filter">
+<form method="post" action="index.php?p=admin&c=wenzhang&a=index&model_id=<?php echo $_GET['model_id'] ?>&sort_id=<?php echo $_GET['sort_id'] ?>" name='theForm' id="search_from">
+	<div class="filter-left">
+		<div class="form-control">
+			时间：从<input name="dtime_str" type="text" id="TextBox1" class="dinput" onClick="WdatePicker()" />至<input name="dtime_end" type="text" id="TextBox2" class="dinput" onClick="WdatePicker()" />
+		</div>
+		<div class="form-control">
+			审核状态：
+			<div class="select-container">
+				<span id="Label1" class="selectOption gray">请选择</span>
+				<ul class="selectMenu">
+					<li>全部</li> 
+					
+					<?php foreach($statusList as $v){  ?>
+                     <li class="zhuangtai" data-value="<?php echo $v['status'] ?>"><?php echo $v['status'] ?></li>
+                    <?php } ?>
+					
+					
+				</ul>
+				<input type="text" hidden="hide" name="status" id="status" value="" />
+				<script>
+				var status="";
+				$(".zhuangtai").click(function(){
+					status=$(this).attr("data-value");
+					$("#status").val(status);
+				});
+				</script>
+				
+				<span class="shows ficon ficon-down-open"></span>
+			</div>
+
+			&nbsp;&nbsp;
+		</div>
+		
+	</div>
+
+	<div class="filter-right">
+		<div class="form-control">
+			<input name="u6" type="text" id="u6" class="input" placeholder="搜索条件" />
+
+			<input type="submit" name="Button1" value="搜索" id="Button1" class="btn btn-blue" />
+		</div>
+		&nbsp;
+		<a href="index.php?p=admin&c=wenzhang&a=add&model_id=<?php echo $_GET['model_id'] ?>&sort_id=<?php echo $_GET['sort_id'] ?>" class="btn btn-green"> + 添加信息</a>
+	</div>
+</form>
+	
+	<br />
+	<p class="clear-right"></p>
+</div>
+<!--筛选条件 end-->
+
+<!--文章table-->
+<table class="table table-border table-hover" id="content">
+	<thead>
+		<tr>
+			<th style='width:5%'></th>
+			
+			<?php foreach($filedLists as $v){ ?>
+                <th style='width:<?php echo $v['u9']?>;text-align:left'><?php echo $v['u2']?></th>
+            <?php } ?>
+			
+			
+			<th>操作</th>
+		</tr>
+	</thead>
+	
+	
+	<?php foreach($tableModel as $brand) : ?>
+	<tr>
+		<td style='width:5%'> &nbsp;&nbsp;
+			<div class="checkbox checkbox-inline checkbox-success"><input type="checkbox" name="chk" value="<?php echo $brand['id']?>"><label></label></div>
+		</td>
+		
+		<?php foreach($filedLists as $v){ ?>
+		
+		    <?php if($v['u7']=="图片"){ ?>   
+				 <td style='width:<?php echo $v['u9']?>;text-align:left'><img src="<?php echo $brand[$v['u1']];?>" style="max-width: 150px;max-height: 100px;overflow: hidden;" onerror="javascript:this.src='application/views/admin/images/nopic.jpg';" /></td>
+				    	     
+            <?php }else { ?>
+                  <td style='width:<?php echo $v['u9']?>;text-align:left'><?php echo $brand[$v['u1']];?></td>
+            <?php  } ?>
+                
+                
+        <?php } ?>
+            
+           
+		<td>
+			<div>
+				<!-- <a href='/index.php?c=page&id=<?php echo $brand['id']?>' target=_blank>查看</a> | -->
+				<a href="index.php?p=admin&c=wenzhang&a=edit&model_id=<?php echo $_GET['model_id']?>&sort_id=<?php echo $_GET['sort_id']?>&id=<?php echo $brand['id'];?>">修改</a> |
+				<a onclick="return confirm('你确认将该信息删除?删除后不可恢复！');" href="index.php?p=admin&c=wenzhang&a=delete&model_id=<?php echo $_GET['model_id']?>&sort_id=<?php echo $_GET['sort_id']?>&id=<?php echo $brand['id'];?>">删除</a>
+			|
+				
+			</div>
+		</td>
+	</tr>
+	<?php endforeach;?>
+	
+	
+</table>
+
+<!--文章table  end-->
+<!--操作部分-->
+<div class="o-hidden padtb-20">
+
+	<div class="fl full-sm">
+		<div class="checkbox checkbox-success fl" style="margin-bottom: 0;">
+			<input type="checkbox" id="check-all" onclick="selcheck('content')">
+			<label for="check-all">全选</label>
+		</div>
+		<div class="fl ft14">
+			&nbsp;&nbsp;
+			<a href="javascript:chk1('index.php?p=admin&c=wenzhang&a=delete&model_id=<?php echo $_GET['model_id']?>&sort_id=<?php echo $_GET['sort_id']?>')" title="删除" class="operation gray"><span class="ficon ficon-qingkong"></span> 删除</a>
+			<!-- <a href="javascript:chk2('')" title="移动" class="operation gray"><span class="ficon ficon-qiehuan"></span> 移动</a>
+			<a href="javascript:chk2('copy')" title="复制" class="operation gray"><span class="ficon ficon-fuzhi-copy"></span> 复制</a> -->
+
+			<a href="javascript:chk1('index.php?p=admin&c=wenzhang&a=updatemore&status=终审&model_id=<?php echo $_GET['model_id']?>&sort_id=<?php echo $_GET['sort_id']?>')" title="审核通过" class="operation gray"><span class="ficon ficon-renzhengtongguo"></span> 审核通过</a>
+			<a href="javascript:chk1('index.php?p=admin&c=wenzhang&a=updatemore&status=回收站&model_id=<?php echo $_GET['model_id']?>&sort_id=<?php echo $_GET['sort_id']?>')" title="审核不通过" class="operation gray"><span class="ficon ficon-liuchengbutongguo"></span> 审核不通过</a>
+
+		<!--
+		<a href="javascript:chk1('index.php?p=admin&c=wenzhang&a=postToBaiduById')" title="提交给百度" class="operation gray"><span class="ficon ficon-renzhengtongguo"></span> 逐条提交给百度</a>
+		<a target="_blank" href='/index.php?p=admin&c=wenzhang&a=postToBaidu&model_id=<?php echo $_GET['model_id']?>&sort_id=<?php echo $_GET['sort_id']?>' ><span class="ficon ficon-renzhengtongguo"></span> 全部提交给百度</a> 
+		-->
+		</div>
+		<p class="clear"></p>
+	</div>
+	<div class="fr full-sm">
+		<div class="pagelist">
+			<?php echo $pageinfo;?>
+		</div>
+	</div>
+</div>
+<!--操作部分 end-->
+
+
+<footer>
+	<?php include CUR_VIEW_PATH."public/footer.html"?>
+</footer>
+</section>
+
+<p class="clear"></p>
+
+<script src="application/views/admin/js/wow.min.js" type="text/javascript"></script>
+<script src="application/views/admin/js/common.js" type="text/javascript"></script>
+
+<!--wow 初始化-->
+<script>
+	if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+		new WOW().init();
+	};
+</script>
+</body>
+
+</html>

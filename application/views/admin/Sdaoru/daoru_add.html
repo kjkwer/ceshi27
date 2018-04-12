@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<?php include CUR_VIEW_PATH."public/head.html"?>
+	 <!--编辑器-->
+	 <!-- 编辑器配置文件 -->
+     <script type="text/javascript" src="application/views/admin/js/ueditor/ueditor.config.js"></script>
+     <!-- 编辑器源码文件 -->
+     <script type="text/javascript" src="application/views/admin/js/ueditor/ueditor.all.js"></script>
+     <!-- 实例化编辑器 -->
+    
+</head>
+
+<body class="body-color">
+	<header>
+		<?php include CUR_VIEW_PATH."public/header.html"?>
+
+	</header>
+	<!--侧边菜单栏-->
+	<aside class="side-nav">
+		<?php include CUR_VIEW_PATH."public/aside.html"?>
+	</aside>
+	<!--侧边菜单栏 end-->
+
+	<!--主体部分-->
+	<section class="body-content">
+		<!--当前位置-->
+		<div class="site-location">
+			&nbsp;&nbsp;
+			<span class="ficon ficon-weizhi"></span>&nbsp;<a href="index.php?p=admin&c=index&a=index">用户首页</a> 
+			&nbsp;&gt;&nbsp;<a href="index.php?p=admin&c=daoru&a=add">导入管理</a>
+			&nbsp;&gt;&nbsp;
+			<a href="#">添加导入</a>
+		</div>
+		
+		<!--当前位置 end-->
+		<br/>
+		
+    <form method="post" action="index.php?p=admin&c=daoru&a=insert" name='theForm' id="theForm" enctype="multipart/form-data">
+		<section class="pos-relative">
+			<!--发布文章中间部分-->
+			<article class="article-edit">
+				<!--上边信息-->
+				<div class="article-top">
+
+						<table class="a-info">
+
+							<tr>
+								<td class="tRight">文件路径：</td>
+								<td colspan="1">
+								     <input type="file" name="wenjian" class="input">
+								</td>
+							</tr>
+
+							<tr>
+								<td class="tRight">导入表</td>
+								<td><select name="t" id="t"
+									class="select-container1">
+										<option value="user">员工</option>
+										<option value="renyuan">人员</option>
+										<option value="huji">户籍</option>
+
+								</select></td>
+							</tr>
+
+
+
+						</table>
+
+					</div>
+				
+				 
+				
+			</article>
+			 
+			
+			<p>
+				<tr>
+				<th></th>
+				<td>
+						<a href="#" class="btn btn-blue" onclick="$('#theForm').submit()"><em class="ficon ficon-queren"></em> 确认操作</a>&nbsp;&nbsp;
+						<a href="#" class="btn btn-green" onclick="if(confirm('确定清空重填?')==false)return false;$('#theForm').find('input').val('')"><em class="ficon ficon-shanchu"></em> 清空重填</a>
+			   </td>
+			   </tr>
+			</p>
+			
+		</section>
+     </form>
+
+
+<footer>
+	<?php include CUR_VIEW_PATH."public/footer.html"?>
+</footer>
+</section>
+
+<p class="clear"></p>
+
+<script src="application/views/admin/js/wow.min.js" type="text/javascript"></script>
+<script src="application/views/admin/js/common.js" type="text/javascript"></script>
+
+<!--wow 初始化-->
+<script>
+	if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+		new WOW().init();
+	};
+</script>
+<script type="text/javascript">
+			$(".a-info-ss").click(function(){
+				$(".a-info .collapse").fadeToggle();
+			})
+		</script>
+
+</body>
+
+</html>

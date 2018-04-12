@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<?php include CUR_VIEW_PATH."public/head.html"?>
+        <script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+       <script src="http://cdn.hcharts.cn/highcharts/modules/exporting.js"></script>
+
+        
+	</head>
+
+	<body class="body-color">
+		<header>
+		<?php include CUR_VIEW_PATH."public/header.html"?>
+
+		</header>
+		<!--侧边菜单栏-->
+		<aside class="side-nav">
+			<?php include CUR_VIEW_PATH."public/aside.html"?>
+		</aside>
+		<!--侧边菜单栏 end-->
+
+		<!--主体部分-->
+		<section class="body-content">
+
+			<!--管理模块-->
+			<section  >
+				<ul class="menu-list">
+					
+					 <li class="bg-skyblue">
+						<a href="/index.php?p=admin&c=yuangong&a=index&model_id=60">
+							<span class="ficon ficon-yzyonghuguanli"></span>
+							<br />用户管理
+						</a>
+					</li>
+					
+					<li class="bg-green">
+						<a href="/index.php?p=admin&c=lanmu&a=index">
+							<span class="ficon ficon-anquan"></span>
+							<br />栏目管理
+						</a>
+					</li>
+					<li class="bg-yellow">
+						<a href="/index.php?p=admin&c=system&a=index">
+							<span class="ficon ficon-wenzhang"></span>
+							<br />系统日志
+						</a>
+					</li>
+					<li class="bg-blue">
+						<a href="/index.php?p=admin&c=peizhi&a=index">
+							<span class="ficon ficon-shop"></span>
+							<br />网站配置
+						</a>
+					</li>
+					<li class="bg-red">
+					<a href="/index.php?p=admin&c=autotable&a=edit&model_id=76&id=1">
+						<span class="ficon ficon-kuozhanicon"></span>
+						<br />关于我们
+					</a>
+				    </li>
+					<li class="bg-watermelon-red">
+					<a href="/index.php?p=admin&c=autotable&a=index&model_id=79">
+						<span class="ficon ficon-cuxiaohuodong"></span>
+						<br />专家团队
+					</a>
+				   </li> 
+				   
+				   
+				</ul>
+			</section>
+			<!--管理模块 end-->
+
+			<!--数据分析-->
+			<section>
+				<div class="home-modular">
+					<div class="home-modular-header">
+						<span class="ficon ficon-shujutongji"></span>&nbsp;数据分析
+					</div>
+					<div class="home-modular-contet">
+						<div class="data-analysis" id="container" style=" width: 100%"> </div>
+						
+						
+						
+				       <p class="clear"></p>
+				      
+						<div class="data-analysis"  style=" width: 75%"> 
+						 <ul class="data-type-list"style="clear: both; width:100%;border-top:1px solid #ddd; padding-top:10px">
+								
+								<?php foreach($sort as $k=>$v1) : ?>
+									<li>
+										<a>
+											<span class="ficon ficon-dingdan"></span><br>
+											<span class="data-num">
+												<?php echo $tableModel->select(" SELECT count(id) as count_id from {$v1['u1']}  ")[0]['count_id']  ?>
+											</span>
+											<br> <?php echo $v1['u2'] ?>
+										</a>
+									</li>
+								<?php endforeach;?>
+				 			</ul>
+				 			</div>
+				 			
+				 			<div class="data-type">
+                            <ul style="line-height:29px">
+                                <li>IP地址：<?php echo GetHostByName($_SERVER['SERVER_NAME']) ?></li>
+                                <li>域名：<?php echo $_SERVER["HTTP_HOST"]?></li>
+                                <li>端口：<?php echo $_SERVER['SERVER_PORT']?></li>
+                                <li>本文件所在路径：<?php echo __FILE__?></li>
+                                <li>操作系统：<?php echo php_uname()?></li>
+                                <li>服务器解译引擎：<?php echo  $_SERVER['SERVER_SOFTWARE']?></li>
+                                <li>服务器语言：<?php echo   $_SERVER['HTTP_ACCEPT_LANGUAGE']?></li> 
+                                <li>CPU类型： <?php echo $_SERVER['PROCESSOR_IDENTIFIER']?></li>
+                                <li>通信协议： <?php echo $_SERVER['SERVER_PROTOCOL'] ?></li>
+                               
+                            </ul>
+				            
+				        </div>
+				        
+				        
+					</div>
+					
+				</div>
+				 
+				
+			</section>
+			<!--数据分析 end -->
+						
+			<!--数据块-->
+			 
+			<!--数据块  end -->
+
+			<footer>
+				<?php include CUR_VIEW_PATH."public/footer.html"?>
+			</footer>
+		</section>
+		<p class="clear"></p>
+
+		<script src="application/views/admin/js/wow.min.js" type="text/javascript"></script>
+		<script src="application/views/admin/js/common.js" type="text/javascript"></script>
+
+		<!--wow 初始化-->
+		<script>
+			if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+				new WOW().init();
+			};
+		</script>
+		
+		
+		<script type="text/javascript">
+		$(function () {
+		    $('#container').highcharts({
+		        title: {
+		            text: '<?php echo $GLOBALS['config_cache']['COMPANYNAME'] ?>大数据分析',
+		            x: -20 //center
+		        },
+		        subtitle: {
+		            text: '来源：<?php echo $GLOBALS['config_cache']['COMPANYNAME'] ?>',
+		            x: -20
+		        },
+		        xAxis: {
+		            categories: [
+                                <?php foreach($dtime as $k=>$v ){ ?>   
+		                         '<?php echo date('m-d',strtotime($v['dtime']))  ?>',
+		                         <?php }?>	                
+		                ]
+		        },
+		        yAxis: {
+		            title: {
+		                text: '数量(条)'
+		            },
+		            plotLines: [{
+		                value: 0,
+		                width: 1,
+		                color: '#808080'
+		            }]
+		        },
+		        tooltip: {
+		            valueSuffix: '条'
+		        },
+		        legend: {
+		            layout: 'vertical',
+		            align: 'right',
+		            verticalAlign: 'middle',
+		            borderWidth: 0
+		        },
+		        series: [
+					<?php foreach($sort as $k=>$v1) : ?>
+					{
+					    name: '<?php echo $v1['u2'] ?>',
+					    data: [
+					           
+					<?php foreach($dtime as $k=>$v ){ ?>   
+					<?php echo $tableModel->select(" SELECT count(id) as count_id from {$v1['u1']} where   DATE_SUB('".date('y-m-d',strtotime($v['dtime']))."', INTERVAL 0 DAY) = date(dtime) ")[0]['count_id']  ?>,
+					<?php }?>	    
+					           
+					           ]
+					},
+					
+					<?php endforeach;?>
+		        
+		        ]
+		    });
+		});
+		</script>
+
+		
+	</body>
+
+</html>

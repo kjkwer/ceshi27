@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<?php include CUR_VIEW_PATH."public/head.html"?>
+</head>
+
+<body class="body-color">
+	<header>
+		<?php include CUR_VIEW_PATH."public/header.html"?>
+
+	</header>
+	<!--侧边菜单栏-->
+	<aside class="side-nav">
+		<?php include CUR_VIEW_PATH."public/aside.html"?>
+	</aside>
+	<!--侧边菜单栏 end-->
+
+	<!--主体部分-->
+	<section class="body-content">
+		<!--当前位置-->
+		<div class="site-location">
+			&nbsp;&nbsp;
+			<span class="ficon ficon-weizhi"></span>&nbsp;<a href="index.php?p=admin&c=index&a=index">用户首页</a>&nbsp;&gt;&nbsp;<a href="index.php?p=admin&c=system&a=index">日志管理</a>
+		</div>
+		<p class="silo_zw"></p>
+		<!--当前位置 end-->
+		<br />
+<!--筛选条件-->
+<div class="filter">
+<form method="post" action="index.php?p=admin&c=system&a=index" name='theForm' id="search_from">
+	<div class="filter-left">
+		
+		<div class="form-control">
+			时间：从<input name="dtime_str" type="text" id="TextBox1" class="dinput" onClick="WdatePicker()" />至<input name="dtime_end" type="text" id="TextBox2" class="dinput" onClick="WdatePicker()" />
+		</div>
+		<div class="form-control">
+			类型：
+			<div class="select-container">
+				<select name="u4" id="u4" class="select-container1">
+					<option value="">全部</option>
+					
+					<?php foreach($u4Lists as $u4) : ?>
+					<option value="<?php echo $u4['u4'];?>"><?php echo $u4['u4'];?></option>
+                    <?php endforeach;?>
+                    
+				</select>
+			</div>
+
+			&nbsp;&nbsp;
+		</div>
+
+	</div>
+
+	<div class="filter-right">
+		<div class="form-control">
+			<input name="u2_str" type="text" id="u2_str" class="input" placeholder="搜索条件" />
+
+			<input type="submit" name="Button1" value="搜索" id="Button1" class="btn btn-blue" />
+		</div>
+
+	</div>
+</from>	
+	
+	<br />
+	<p class="clear-right"></p>
+</div>
+<!--筛选条件 end-->
+
+<!--文章table-->
+<table class="table table-border table-hover" id="content">
+	<thead>
+		<tr>
+			<th style="width:60px">&nbsp;</th>
+			<th style="width:80px">编号</th>
+			<th style="width:120px">操作者</th>
+			<th style="width:auto">操作描述</th>
+			<th style="width:80px">IP地址</th>
+			<th style="width:100px">操作类型</th>
+			<th style="width:140px">操作时间</th>
+
+		</tr>
+	</thead>
+	<tbody>
+<?php foreach($systems as $brand) : ?>
+		<tr>
+			<td>
+				&nbsp;&nbsp;
+				<div class="checkbox checkbox-inline checkbox-success">
+					<input type="checkbox" name="chk" value="<?php echo $brand['id'];?>" />
+					<label></label>
+				</div>
+			</td>
+			<td><?php echo $brand['id'];?></td>
+			<td style="text-align:left; word-break:break-all; word-wrap:break-all;"><?php echo $brand['u1'];?></td>
+			<td style="text-align:left; word-break:break-all; word-wrap:break-all;"><?php echo $brand['u2'];?></td>
+			<td  style='width:20%;'><?php echo $brand['u3'];?></td>
+			<td><?php echo $brand['u4'];?></td>
+			<td><?php echo $brand['dtime'];?></td>
+		</tr>
+<?php endforeach;?>
+		
+
+	</tbody>
+</table>
+<!--文章table  end-->
+<!--操作部分-->
+<div class="o-hidden padtb-20">
+
+	<div class="fl full-sm">
+		<div class="checkbox checkbox-success fl" style="margin-bottom: 0;">
+			<input type="checkbox" id="check-all" onclick="selcheck('content')">
+			<label for="check-all">全选</label>
+		</div>
+		<div class="fl ft14">
+			&nbsp;&nbsp;
+			<a href="javascript:chk1('index.php?p=admin&c=system&a=delete')" title="删除" class="operation gray"><span class="ficon ficon-qingkong"></span> 删除</a>
+
+		</div>
+		<p class="clear"></p>
+	</div>
+	<div class="fr full-sm">
+		<div class="pagelist">
+			<?php echo $pageinfo;?>
+		</div>
+	</div>
+</div>
+<!--操作部分 end-->
+
+
+<footer>
+	<?php include CUR_VIEW_PATH."public/footer.html"?>
+</footer>
+</section>
+
+<p class="clear"></p>
+
+<script src="application/views/admin/js/wow.min.js" type="text/javascript"></script>
+<script src="application/views/admin/js/common.js" type="text/javascript"></script>
+
+<!--wow 初始化-->
+<script>
+	if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+		new WOW().init();
+	};
+</script>
+</body>
+
+</html>

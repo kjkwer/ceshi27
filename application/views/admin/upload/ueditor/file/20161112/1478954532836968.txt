@@ -1,0 +1,43 @@
+/*****************将一张表的数据全部导入到另一张表*********************/
+insert into 表_new
+select * from 表_old
+
+
+
+/*****************更新某一行中的一个列*********************/
+我们为 lastname 是 "Wilson" 的人添加 firstname：
+
+UPDATE Person SET FirstName = 'Fred' WHERE LastName = 'Wilson' 
+
+
+/***********************统计当天的数据***********************/
+Select count(*) as cid From " + table + " Where Convert(varchar(10),[dtime],120) = Convert(varchar(10),getDate(),120)
+
+
+/*************************格式化时间*****************************/
+
+Select CONVERT(varchar(100), GETDATE(), 23): 2006-05-16
+
+
+
+/*************************UNION 操作符用于合并两个或多个 SELECT 语句的结果集。*****************************/
+SQL UNION 语法
+
+SELECT column_name(s) FROM table_name1
+UNION
+SELECT column_name(s) FROM table_name2
+
+
+/*************************查询不重复的数据*****************************/
+select * from sl_cuotiku where id in(Select min(id) FROM sl_cuotiku where  1=1   and yonghuming='13320668037' group by timuming)
+
+
+
+/*************************如何在SQL中把int转为string*****************************/
+
+cast(a as varchar(10))
+
+
+
+/*************************时间差*****************************/
+ DATEDIFF(mm,q.qiandaoshijian,GETDATE())=0 

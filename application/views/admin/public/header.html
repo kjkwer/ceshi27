@@ -1,0 +1,91 @@
+<div class="logo">
+				<a href="index.php?p=admin&c=index&a=index"><img src="application/views/admin/images/logo.png" height="100%" /></a>
+</div>
+			<span class="ficon ficon-menu app-ficon-menu"></span>
+			<div class="top-nav">
+				<div class="nav-right">
+					<!--通知列表-->
+					<ul class="notice-list">
+						<!-- <li>
+							<a class="drop-tag">
+								<span class="ficon ficon-gouwuche"></span>
+								<em class="notice-num">0</em>
+							</a>
+						</li>
+						<li>
+							<a class="drop-tag">
+								<span class="ficon ficon-duanxin"></span>
+								<em class="notice-num">4</em>
+							</a>
+						</li> -->
+						<li>
+				    		<a href="/index.php?p=admin" class="drop-tag" title="返回首页" target="_blank">
+				    		<span class="ficon ficon-shouye"></span>
+				    		</a>
+				    	</li>
+						<li class="top-user-info">
+							<a class="drop-tag">
+								<img src="<?php echo $_SESSION['admin']['pic'] ?>" class="user-img" />&nbsp;&nbsp;<span class="user-name"><?php echo $_SESSION['admin']['username'] ?> </span>
+							</a>
+							<div class="drop-list">
+								<dl>
+									<!-- <dd>
+										<a><em class="ficon ficon-yonghuzhongxin"></em> 用户中心</a>
+									</dd> -->
+									<dd>
+										<a href="index.php?p=admin&c=yonghu&a=edit&id=<?php echo $_SESSION['admin']['user_id'] ?>"><em class="ficon ficon-shezhi"></em> 用户中心</a>
+									</dd>
+									<!-- <dd>
+										<a href="index.php?p=admin&c=lanmu&a=index"><em class="ficon ficon-lanmu"></em> 栏目设置</a>
+									</dd> -->
+									<dd>
+										<a href="index.php?p=admin&c=login&a=logout" onclick="if(confirm('确定取消退出?')==false)return false;"><em class="ficon  ficon-tuichu"></em> 退出</a>
+									</dd>
+								</dl>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="nav-left_ghy">
+					
+					<div style="height: 50%;padding-top: 16px; vertical-align: 50%;">
+					
+					<!-- $temp_headerModel = new LanmuModel('column_group');
+	                 $tiaojian_headerModel=array("classid"=>"0","u4"=>"显示","group_id"=>$_SESSION['admin']['group_id']);
+                     $temp_header_arr=$temp_headerModel->selectByArrayAnd($tiaojian_headerModel);
+					 	foreach($temp_header_arr as $k=>$v)
+						{
+							if(!empty($ids))
+							{	
+								$ids.=",".$v["id"];
+							}
+							else{
+								$ids=$v["id"];
+							}
+						 
+						}                     
+					 $headerModel = new LanmuModel('column');
+	                 $headerList=$headerModel->select("select * from sl_column where id in ({$ids}) ");
+	                  -->
+					<?php 
+					 $headerModel = new LanmuModel('column_group');
+	                 //$tiaojian_headerModel=array("classid"=>"0","u4"=>"显示","group_id"=>$_SESSION['admin']['group_id']);
+	                 //$headerList=$headerModel->selectByArrayAndLanmu($tiaojian_headerModel);
+                     $headerList=$headerModel->select("select u1,id from sl_column_group where classid=0 and u4='显示' and group_id={$_SESSION['admin']['group_id']} ");
+	                 foreach ($headerList as $column) {
+                    ?>
+
+                     <span class="ficon_ghy" onclick="getAsideList('<?php echo $column['id']?>')"> <?php echo $column['u1']?></span>
+                    <?php 
+                    }
+					?>
+				
+				
+				
+				</div>
+				</div>
+				
+				
+				
+			</div>

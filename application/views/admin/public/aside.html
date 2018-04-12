@@ -1,0 +1,89 @@
+<div class="pos-relative">
+	<ul class="side-nav-ul ">
+		<li id="index_aside" class="nLi on">
+			<h3><a href="index.php?p=admin&c=index&a=index" ><em class="ficon ficon-shouye"></em> 用户首页</a></h3>
+
+		</li>
+		            <?php 
+					 $asideModel = new LanmuModel('column_group');
+	                 //$tiaojian_asideModel=array("u4"=>"显示","group_id"=>$_SESSION['admin']['group_id']);
+	                 //$asideList=$asideModel->selectByArrayAndLanmu($tiaojian_asideModel);
+					 $asideList=$asideModel->select("select * from sl_column_group where u4='显示' and group_id={$_SESSION['admin']['group_id']} ");
+                     $asideList=$asideModel->child($asideList);
+                     
+                    ?>
+                    
+        <!-- 第一重循环 start -->
+        <?php 
+        foreach ($asideList as $column): 
+         ?>
+		<li id="<?php echo $column['id']?>" class="nLi lanmu_aside" style="display:none">
+			<h3 ><a > <em class="ficon ficon-list"></em><?php echo $column['u1']?></a></h3>
+            
+            
+             <!-- 第二重循环 start -->
+             <?php if($column['child']!=''){?>
+           
+			<ul class="sub">
+			 <?php foreach ($column['child'] as $col1):?>
+				<li class="nLi">
+                    <?php if(count($col1['child'])>0){?>
+					
+					<h3><a> <?php echo $col1['u1']?></a></h3>
+					 <!-- 第三重循环 start -->
+					<ul class="sub">
+					    <?php foreach ($col1['child'] as $col2):?>
+                        <li class="nLi"> 
+                        
+                              <?php   
+                                 if(count($col2['child'])>0){
+					           ?>
+					           
+					           <!-- 第四重循环 start -->
+                               <li class="nLi">
+                              
+								<h3><a  > <?php echo $col2['u1']?></a></h3>
+								<ul class="sub">
+								 <?php foreach ($col2['child'] as $col3):?>
+									<li class="nLi"> 
+										<a href="<?php echo $col3['u3']?>"> <?php echo $col3['u1']?></a>
+									</li >
+								 <?php endforeach;?>
+								</ul>
+								
+							</li>
+							<!--第四重循环 end  -->
+							
+                               <?php 
+                                  }else{
+                               ?>
+
+                               <a href="<?php echo $col2['u3']?>"> <?php echo $col2['u1']?></a>
+                              <?php  
+                                  }
+                               ?>
+										
+						</li >
+						<?php endforeach;?>
+                    </ul>
+					<!--第三重循环 end  -->
+					<?php }else{?>
+					<li>
+					   <a href="<?php echo $col1['u3']?>"> <?php echo $col1['u1']?></a>
+                    </li>
+					<?php }?>
+				 </li>
+             <?php endforeach;?>
+			</ul>
+            
+            <?php }?>
+            <!-- 第二重循环 start -->
+            
+            
+		</li>
+		<?php endforeach;?>
+        <!-- 第一重循环 end -->
+         
+	</ul>
+	<em class="sj"></em>
+</div>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="application/views/admin/css/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="application/views/admin/fonts/css/fontello.css"/>
+	<link rel="stylesheet" type="text/css" href="application/views/admin/css/common.css"/>
+	<script src="application/views/admin/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script src="application/views/admin/js/common.js" type="text/javascript"></script>
+	<script src="application/views/admin/js/wow.min.js" type="text/javascript"></script>
+	
+    <title></title>
+    <style type="text/css">
+    	html{
+    		height: 100%;
+    	}
+.animated {
+		  			-webkit-animation-duration: 1s;
+		  			animation-duration: 1s;
+		  			-webkit-animation-fill-mode: both;
+		  			animation-fill-mode: both;
+		  		}
+		  		.animated-delay{
+		  			animation-delay:.5s;
+		  			-webkit-animation-delay:.5s; 
+		  		}
+
+
+		  		@-webkit-keyframes fadeLeft {
+		  			0% {
+		  				opacity: 1;
+		  			}
+
+		  			100% {
+		  				opacity: 0;
+		  				-webkit-transform: translate3d(-30px, 0, 0);
+		  				transform: translate3d(-30px, 0, 0);
+		  			}
+		  		}
+
+		  		@keyframes fadeLeft {
+		  			0% {
+		  				opacity: 1;
+		  			}
+
+		  			100% {
+		  				opacity: 0;
+		  				-webkit-transform: translate3d(-30px, 0, 0);
+		  				transform: translate3d(-30px, 0, 0);
+		  			}
+		  		}
+
+		  		.fadeLeft {
+		  			-webkit-animation-name: fadeLeft;
+		  			animation-name: fadeLeft;
+		  		}
+		  		@-webkit-keyframes fadeRight {
+		  			0% {
+		  				opacity: 1;
+		  			}
+
+		  			100% {
+		  				opacity: 0;
+		  				-webkit-transform: translate3d(30px, 0, 0);
+		  				transform: translate3d(30px, 0, 0);
+		  			}
+		  		}
+
+		  		@keyframes fadeRight {
+		  			0% {
+		  				opacity: 1;
+		  			}
+
+		  			100% {
+		  				opacity: 0;
+		  				-webkit-transform: translate3d(30px, 0, 0);
+		  				transform: translate3d(30px, 0, 0);
+		  			}
+		  		}
+
+		  		.fadeRight {
+		  			-webkit-animation-name: fadeRight;
+		  			animation-name: fadeRight;
+		  		}
+
+		  		@-webkit-keyframes fadeUp {
+		  			0% {
+		  				opacity: 1;
+		  			}
+
+		  			100% {
+		  				opacity: 0;
+		  				-webkit-transform: translate3d(0, -30px, 0);
+		  				transform: translate3d(0, -30px, 0);
+		  			}
+		  		}
+
+		  		@keyframes fadeUp {
+		  			0% {
+		  				opacity: 1;
+		  			}
+
+		  			100% {
+		  				opacity: 0;
+		  				-webkit-transform: translate3d(0, -30px, 0);
+		  				transform: translate3d(0, -30px, 0);
+		  			}
+		  		}
+
+		  		.fadeUp {
+		  			-webkit-animation-name: fadeUp;
+		  			animation-name: fadeUp;
+		  		}
+
+
+		  		@-webkit-keyframes fadeUpIn {
+		  			0% {
+		  				opacity: 0;
+		  			}
+
+		  			100% {
+		  				opacity: 1;
+		  				-webkit-transform: translate3d(0, -30px, 0);
+		  				transform: translate3d(0, -30px, 0);
+		  			}
+		  		}
+
+		  		@keyframes fadeUpIn {
+		  			0% {
+		  				opacity: 0;
+		  			}
+
+		  			100% {
+		  				opacity: 1;
+		  				-webkit-transform: translate3d(0, -30px, 0);
+		  				transform: translate3d(0, -30px, 0);
+		  			}
+		  		}
+
+		  		.fadeUpIn {
+		  			-webkit-animation-name: fadeUpIn;
+		  			animation-name: fadeUpIn;
+		  		}
+    </style>
+
+		  </head>
+		  <body class="login-bg">
+
+
+		  	<div class="login">
+
+		  		<div class="login-content">
+		  			<p><a href="#"><img src="application/views/admin/images/login-logo.png"/></a></p>
+		  			<br />
+		  			<form method="post" action="index.php?p=admin&c=login&a=signin" name='theForm' id="form_login">
+		  				<div class="login-form fl">
+		  					<input type="text" class="login-input" name="username" onkeydown="onKeyDown()" />
+		  					<span class="ficon ficon-user"></span>
+		  				</div>
+		  				<span class="dot fl">&hellip;</span>
+
+		  				<div class="login-form fr">
+		  				<input type="password" class="login-input" name="password" onkeydown="onKeyDown()" />
+		  					<span class="ficon ficon-mima"></span>
+		  				</div>
+		  				<input type="hidden" name="act" value="signin" />
+		  			</form>
+
+		  			<span class="dot fr">&hellip;</span>
+		  			<img src="application/views/admin/images/touxiang.jpg" class="login-touxiang"/>
+		  			<p>
+		  				<br />
+		  				<a href="#" class="btn btn-default" onclick="enter();"><em class="ficon ficon-shuaxin"></em> 登录</a>
+		  			</p>
+		  			<div class="progress_bar">
+		  				<div class="progress"></div>
+		  			</div>
+		  		</div>
+		  	</div>
+
+
+		  
+		  	<!--wow 初始化-->
+		  	<script>
+		  		if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+		  			new WOW().init();
+		  		};
+		  	</script>
+		   
+		  	<script type="text/javascript">
+		  	function onKeyDown() {
+		        var code = event.keyCode;
+		        if (code == 13) {
+		            enter();
+		            return false;
+		        }
+
+		    }
+		  	
+		  	
+		  		function enter(){
+		  			$(".login-form.fl").addClass("animated fadeRight");
+		  			$(".login-form.fr").addClass("animated fadeLeft");
+		  			$(".btn-default").addClass("animated fadeUp");
+		  			$(".login-touxiang").addClass("animated animated-delay fadeUp");
+		  			$(".progress_bar").addClass("animated animated-delay fadeUpIn");
+		  			$(".progress").delay(300).animate({"width":"100%"},1000);
+		  			$("#form_login").delay(300).submit();
+		  		}
+		  	</script>
+		  </body>
+		  </html>

@@ -1,0 +1,1 @@
+<?php// 文章模型控制器class IndexController extends BaseController{          public function  indexAction(){                    include CUR_VIEW_PATH . "Sindex" . DS . "index_code.html";          }}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<?php include CUR_VIEW_PATH."public/head.html"?>
+</head>
+
+<body class="body-color">
+	<header>
+		<?php include CUR_VIEW_PATH."public/header.html"?>
+
+	</header>
+	<!--侧边菜单栏-->
+	<aside class="side-nav">
+		<?php include CUR_VIEW_PATH."public/aside.html"?>
+	</aside>
+	<!--侧边菜单栏 end-->
+
+	<!--主体部分-->
+	<section class="body-content">
+		<!--当前位置-->
+		<div class="site-location">
+			&nbsp;&nbsp;
+			<span class="ficon ficon-weizhi"></span>&nbsp;<a href="/index.php?p=admin&c=index&a=index">用户首页</a>
+			&nbsp;&gt;&nbsp;<a href="/index.php?p=admin&c=moxing&a=index">模型管理</a>
+			&nbsp;&gt;&nbsp;<a href="/index.php?p=admin&c=filed&a=index&model_id=<?php echo empty($filed['model_id'])?'':$filed['model_id'] ?>">字段管理</a>
+			&nbsp;&gt;&nbsp;<a href="#">字段添加</a>
+		</div>
+		
+		<form method="post" action="index.php?p=admin&c=filed&a=insert" name='theForm' id="theForm">
+		<table class="table table-info cs-table">
+			<tr>
+				<th style="width:10%">字段名称</th>
+				<td>
+					<input name="u2" id="u2" type="text" value="" class="input" />
+					<span id="Label2" style="color:Red;">*字段名称的拼音自动设置成数据库字段名</span>
+				</td>
+			</tr>
+			<tr>
+				<th>数据库字段名</th>
+				<td>
+					<input name="u1" id="u1"  type="text" value=""   class="input" />
+					<span id="Label1" style="color:Red;">*这里的名称跟表中字段一样</span>
+				</td>
+			</tr>
+
+			<tr>
+				<th>字段提示</th>
+				<td>
+					<input name="u3" type="text" id="u3" class="input" value=" "/>
+				</td>
+			</tr>
+			<tr>
+				<th>是否必填</th>
+				<td>
+					<div class="checkbox checkbox-inline checkbox-info">
+						<input id="u4" type="checkbox" name="u4"  />
+						<label for="CheckBox1">是</label>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>是否显示</th>
+				<td>
+					<div class="checkbox checkbox-inline checkbox-info">
+						<input id="u5" type="checkbox" name="u5"  />
+						<label for="CheckBox2">是</label>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>是否检索</th>
+				<td>
+					<div class="checkbox checkbox-inline checkbox-info">
+						<input id="u6" type="checkbox" name="u6"  />
+						<label for="CheckBox3">是</label>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>字段类型</th>
+				<td>
+
+					<select name="u7"  id="u7" class="select-container1">
+					
+					<?php $i=1; foreach($u7 as $v) {  ?>
+					    <?php if($i==1) { ?>
+                              <option selected="selected" value="<?php echo $v['u1'] ?>"><?php echo $v['u1'] ?></option>
+                        <?php }else { ?>
+                               <option  value="<?php echo $v['u1'] ?>"><?php echo $v['u1'] ?></option>
+                        <?php } ?>
+                       
+					<?php $i++;} ?>	
+					
+					</select>
+					<font color="red">*</font>
+				</td>
+			</tr>
+			<tr>
+				<th>默认值</th>
+				<td>
+					<textarea name="u8" rows="2" cols="20" id="u8" class="txtinput" style="margin: 0px; width: 402px; height: 135px;"></textarea>
+					<p>
+						多个值，回车隔开<br /> 默认命令：当前时间 自动获取<br /> sql语句用法：sql{表名=表名|查询条件=where id=1|排序=order by id desc|返回字段=title,id}
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<th>列表CSS</th>
+				<td>
+					<input name="u9" type="text" value="10%" id="u9" class="input" />
+				</td>
+			</tr>
+			<tr>
+				<th>排序</th>
+				<td>
+					<input name="u10" type="text" value="0" id="u10" class="input" />
+				</td>
+			</tr>
+			<input type="text" hidden="hide" name="model_id" value="<?php echo $_GET['model_id'] ?>" />
+			<tr>
+				<th></th>
+				<td>
+						<a href="#" class="btn btn-blue" onclick="$('#theForm').submit()"><em class="ficon ficon-queren"></em> 确认操作</a>&nbsp;&nbsp;
+						<a href="#" class="btn btn-green" onclick="if(confirm('确定清空重填?')==false)return false;$('#theForm').find('input').val('')"><em class="ficon ficon-shanchu"></em> 清空重填</a>
+			   </td>
+			</tr>
+		</table>
+     </form>
+
+<footer>
+	<?php include CUR_VIEW_PATH."public/footer.html"?>
+</footer>
+</section>
+
+<p class="clear"></p>
+
+<script src="application/views/admin/js/wow.min.js" type="text/javascript"></script>
+<script src="application/views/admin/js/common.js" type="text/javascript"></script>
+
+<!--wow 初始化-->
+<script>
+	if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+		new WOW().init();
+	};
+	
+	///index.php?p=admin&c=filed&a=Zh2Py&Zh_str=龚华尧
+    //将输入的中文转换为拼音
+    $("#u2").blur(function(){
+    	var re_str=$.ajax({url:"index.php?p=admin&c=filed&a=Zh2Py&model_id=<?php echo $_GET["model_id"]?>&Zh_str="+$("#u2").val()+"&type=add",async:false}).responseText;
+    	var re_json=JSON.parse(re_str);
+    	if(re_json.status=="true")
+    		{
+    		var u1_value=re_json.content;
+            $("#u1").val(u1_value);
+    		}
+    	else
+    		{
+    		alert(re_json.content);
+    		
+    		}
+        
+    
+    });
+	
+</script>
+</body>
+
+</html>

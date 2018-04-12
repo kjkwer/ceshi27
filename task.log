@@ -1,0 +1,12 @@
+view plain copy
+
+#! /www/wdlinux/php/bin/php -q
+2018-02-07 18:11:01﻿<br />
+<b>Notice</b>:  Undefined index: HTTP_USER_AGENT in <b>/www/web/jnc/public_html/framework/libraries/Common.class.php</b> on line <b>429</b><br />
+球衣已被抽完</br>杯子已被抽完</br>更新完成
+2018-02-08 10:26:01﻿<br />
+<b>Notice</b>:  Undefined index: HTTP_USER_AGENT in <b>/www/web/jnc/public_html/framework/libraries/Common.class.php</b> on line <b>429</b><br />
+更新完成
+2018-02-09 00:00:01﻿<br />
+<b>Notice</b>:  Undefined index: HTTP_USER_AGENT in <b>/www/web/jnc/public_html/framework/libraries/Common.class.php</b> on line <b>429</b><br />
+旅行背包更正概率10,更正当日开奖次数10；球衣更正概率10,更正当日开奖次数10；健身背包更正概率10,更正当日开奖次数10；帽子更正概率20,更正当日开奖次数10；杯子更正概率20,更正当日开奖次数10；手机壳更正概率10,更正当日开奖次数10；马克杯更正概率10,更正当日开奖次数10；足球更正概率10,更正当日开奖次数10；更新完成！
