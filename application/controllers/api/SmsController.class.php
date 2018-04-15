@@ -9,7 +9,8 @@
 header("Content-type: text/html; charset=gbk2312");
 class SmsController extends BaseController
 {
-        public function smsAction(){
+    //>>注册短信验证码
+    public function smsAction(){
         header("Content-type: text/html; charset=gbk2312");
         date_default_timezone_set('PRC'); //
         $tel = empty($_REQUEST['tel'])?'':$_REQUEST['tel'];
@@ -21,7 +22,32 @@ class SmsController extends BaseController
         $message=rand(1000,9000);
         $_SESSION["a".$tel] = $message;
         $msg = rawurlencode(mb_convert_encoding($message, "gb2312", "utf-8"));
-        $msg="锟斤拷锟斤拷锟斤拷证锟斤拷为:".$msg."锟斤拷锟缴讹拷思锟街★拷";
+        $msg="您的验证码为：".$msg."【成都思乐】";
+        $gateway = "http://mb345.com:999/ws/BatchSend2.aspx?CorpID={$uid}&Pwd={$pwd}&Mobile={$tel}&Content={$msg}&SendTime=&cell=";
+        $result = file_get_contents($gateway);
+        if ($result>0){
+            echo json_encode(true);
+        }else{
+            echo $result;
+        }
+    }
+    //>>找回密码短息验证
+    public function lookpwdAction(){
+        header("Content-type: text/html; charset=gbk2312");
+        date_default_timezone_set('PRC');
+        $userId = $_POST["userId"];
+        $model = new ModelNew("member");
+        $data = $model->where(["id"=>$userId])->find("yonghuming")->one();
+        $tel = !empty($data["yonghuming"])?$data["yonghuming"]:"";
+        if ($tel==''){
+            echo "false";exit;
+        }
+        $uid = 'SLKJ006499';
+        $pwd = '123456';
+        $message=rand(1000,9000);
+        $_SESSION["a".$tel] = $message;
+        $msg = rawurlencode(mb_convert_encoding($message, "gb2312", "utf-8"));
+        $msg="您的验证码为：".$msg."【成都思乐】";
         $gateway = "http://mb345.com:999/ws/BatchSend2.aspx?CorpID={$uid}&Pwd={$pwd}&Mobile={$tel}&Content={$msg}&SendTime=&cell=";
         $result = file_get_contents($gateway);
         if ($result>0){

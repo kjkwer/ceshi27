@@ -1,1 +1,1 @@
-<?php//项目配置文件return array(    'host' => '127.0.0.1',	'user' => 'ceshi27',	'password' => 'K5B8M7R6',	'dbname' => 'ceshi27',	'port' => '3306',	'charset' => 'utf8',	'prefix' => 'sl_',	'log' => 'true'        );
+<?php//项目配置文件return array(    'host' => '127.0.0.1',	'user' => 'root',	'password' => 'root',	'dbname' => 'ceshi27',	'port' => '3306',	'charset' => 'utf8',	'prefix' => 'sl_',	'log' => 'true');

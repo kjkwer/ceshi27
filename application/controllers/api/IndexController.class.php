@@ -8,8 +8,12 @@ class IndexController extends BaseController
 {
     function __construct()
     {
-        header('Access-Control-Allow-Origin:*');
         ob_end_clean();
+        header('Access-Control-Allow-Origin:*');
+        header("Access-Control-Allow-Headers", "content-type");
+        header("Access-Control-Allow-Methods", "POST,GET,PUT,OPTIONS");
+   
+
     }
 
 
@@ -198,9 +202,6 @@ class IndexController extends BaseController
         echo self::returnAction($msg);
     }
 
-
-
-
     function ktxAction(){
         $model=new ModelNew('zonghe');
         $num=empty($_REQUEST['num'])?10:$_REQUEST['num'];
@@ -256,8 +257,6 @@ class IndexController extends BaseController
             echo self::returnAction($result);
         }
     }
-
-
     //评论转发的功能
     function  add1Action(){
         $table=$_REQUEST['table'];
@@ -338,7 +337,6 @@ class IndexController extends BaseController
 
         echo self::returnAction($result);
     }
-
     //个人中心
     function zhuangtaiAction(){
         $uid=$_REQUEST['uid'];
@@ -361,7 +359,6 @@ class IndexController extends BaseController
         $msg['fensi']=$fensi;
         echo self::returnAction($msg);
     }
-
     //我的关注
     function wdgzAction(){
 //                $uid=$_SESSION['id'];
@@ -386,7 +383,6 @@ class IndexController extends BaseController
         }
         echo self::returnAction($result);
     }
-
     //阅读历史
     function ydlsAction(){
         $num=empty($_REQUEST['num'])?10:$_REQUEST['num'];
@@ -412,21 +408,18 @@ class IndexController extends BaseController
         }
         echo self::returnAction($msg);
     }
-
     function  upload1Action(){
         $filename ="public/webuploader/upload/".time().$_FILES['file']['name'];
         move_uploaded_file($_FILES["file"]["tmp_name"],$filename);//将临时地址移动到指定地址
         $data['url']="http://".$_SERVER['HTTP_HOST']."/".$filename;
         echo json_encode($data);
     }
-
     function ldfgAction(){
         $model=new ModelNew('ldfg');
         $xiangzhen=self::huanAction($_REQUEST['xiangzhen']);
         $msg=$model->where(['xiangzhen'=>$xiangzhen])->find()->all();
         echo self::returnAction($msg);
     }
-
     //名片
     function mingpianAction(){
         $model=new ModelNew('mingpian');
@@ -434,7 +427,6 @@ class IndexController extends BaseController
         $msg=$model->where(['xiangzhen'=>$xiangzhen])->find()->one();
         echo self::returnAction($msg);
     }
-
     //修改密码
     function gmmAction(){
         header('Content-type: application/json');
@@ -470,7 +462,6 @@ class IndexController extends BaseController
             echo json_encode($result);exit;
         }
     }
-
     //我的发布
     function wdfbAction(){
         $num=empty($_REQUEST['num'])?10:$_REQUEST['num'];
@@ -483,7 +474,6 @@ class IndexController extends BaseController
         $msg=$model->findBySql("select *from sl_sjx WHERE uid={$id} limit {$act},{$num}");
         echo self::returnAction($msg);
     }
-
     //意见反馈
     function yjfkAction(){
         $zhuti=$_REQUEST['zhuti'];
@@ -528,7 +518,6 @@ class IndexController extends BaseController
         $number=$model->findBysql("select count(*) from sl_pinglun WHERE wid={$id} and fenlei='".$fenlei."'")[0]['count(*)'];
         echo self::returnAction($number);
     }
-
     //我的消息
     function  wdxxAction(){
         $num=empty($_REQUEST['num'])?10:$_REQUEST['num'];
@@ -636,6 +625,128 @@ class IndexController extends BaseController
         }
         echo self::returnAction(1);
     }
+    //>>切换乡镇
+    function switchoverTownAction(){
+
+    }
+    //>>用户修改资料
+    function upateUserDateAction(){
+        $userId = !empty($_REQUEST["userId"])?$_REQUEST["userId"]:"";  //用户ID
+        $nickName = !empty($_REQUEST["nickName"])?$_REQUEST["nickName"]:""; //昵称ID
+        $phone = !empty($_REQUEST["phone"])?$_REQUEST["phone"]:"";  //手机号
+        $headPicture = !empty($_REQUEST["headPicture"])?$_REQUEST["headPicture"]:"";//头像
+        if ($nickName == ""){
+            $result['status']=false;
+            $result['msg']="昵称不能为空！";
+            echo json_encode($result);exit;
+        }
+        if ($phone == ""){
+            $result['status']=false;
+            $result['msg']="电话不能为空！";
+            echo json_encode($result);exit;
+        }
+        $model=new ModelNew('member');
+        $msg=$model->where(['yonghuming'=>$phone])->find()->one();
+        if (!empty($msg)){
+            if ($msg["id"] != $userId){
+                $result['status']=false;
+                $result['msg']="电话已经被注册";
+                echo json_encode($result);exit;
+            }
+        }
+        $data["mingcheng"] = $nickName;
+        $data["yonghuming"] = $phone;
+        $data["touxiang"] = $headPicture;
+        $_model=new ModelNew('member');
+        $rs = $_model->where(["id"=>$userId])->update($data);
+        if ($rs){
+            $result['status']=true;
+            $result['msg']="修改成功";
+        }else{
+            $result['status']=false;
+            $result['msg']="修改失败";
+        }
+        echo self::ajaxJsonAction($result);
+    }
+    //>>获取首页滚动图
+    function rollPictureAction(){
+        $model = new ModelNew("roll_picture");
+        $data = $model->findBySql("select * from sl_roll_picture");
+        if ($data){
+            $result['status']=true;
+            $result['msg']=$data;
+        }else{
+            $result['status']=false;
+            $result['msg']="没有数据";
+        }
+        echo self::ajaxJsonAction($result);
+    }
+    //>>上传图片
+    function uploadPictureAction(){
+
+
+        $result = array("status"=>false,"msg"=>"上传失败");
+        if (!empty($_FILES["file"])){
+            $pictureData = $_FILES["file"];
+            if ($pictureData["error"]==0){
+                if (explode("/",$pictureData["type"])[0]=="image"){
+                    //>>移动图片
+                    //设置图片保存路径
+                    $filePath = "public/images/".date("Ymd",time());
+                    if (!is_dir($filePath)){
+                        mkdir ($filePath,0777,true);
+                    }
+                    //>>移动文件
+                    $file = $filePath."/".uniqid().stristr($pictureData['name'],'.');
+                    if(move_uploaded_file($pictureData["tmp_name"],$file)){
+                        $result = array("status"=>true,"url"=>"http://".$_SERVER['SERVER_NAME'].$file);
+                    }
+                }
+            }
+        }
+        echo self::ajaxJsonAction($result);
+    }
+    //>>验证找回密码短信
+    function checkLookPwdAction(){
+        $result = array("status"=>false,"msg"=>"验证失败");
+        $userId = $_POST["userId"];
+        $authCode = $_POST["authCode"];
+        $model = new ModelNew("member");
+        $data = $model->where(["id"=>$userId])->find("yonghuming")->one();
+        $tel = !empty($data["yonghuming"])?$data["yonghuming"]:"";
+        if ($tel==""){
+            $result = array("status"=>false,"msg"=>"电话号码为空");
+        }else{
+            if (empty($_SESSION["a".$tel])){
+                $result = array("status"=>false,"msg"=>"验证码已过期");
+            }else{
+                if ($_SESSION["a".$tel]==$authCode){
+                    $result = array("status"=>true,"msg"=>"验证通过");
+                }else{
+                    $result = array("status"=>false,"msg"=>"验证失败");
+                }
+            }
+        }
+        echo self::ajaxJsonAction($result);
+    }
+    //>>找回密码设置新密码
+    function setNewPwdAction(){
+        $userId = $_REQUEST["userId"];
+        $pwd = $_REQUEST["newPwd"];
+        $model = new ModelNew("member");
+        $data["mima"] = md5($pwd);
+        if ($model->where(["id"=>$userId])->update($data)){
+            $result = array("status"=>true,"msg"=>"新密码设置成功");
+        }else{
+            $result = array("status"=>false,"msg"=>"新密码设置失败");
+        }
+        echo self::ajaxJsonAction($result);
+    }
+    //>>测试接口
+    function testAction(){
+        echo self::ajaxJsonAction($_SESSION["a13551275272"]);
+    }
+
 
     static function  adAction($leixing,$wid,$_uid){
         $table=$leixing;
@@ -669,7 +780,7 @@ class IndexController extends BaseController
         $_model->insert($data);
     }
 
-        function wdfsAction(){
+    function wdfsAction(){
             $id=$_REQUEST['uid'];
             $model=new ModelNew('guanzhu');
             $rs=$model->where(['buid'=>$id])->find()->all();
@@ -695,7 +806,7 @@ class IndexController extends BaseController
             echo self::returnAction($result);
         }
 
-        function  changeAction(){
+    function  changeAction(){
             $uid=$_REQUEST['uid'];
             $pid=$_REQUEST['buid'];
             $model=new ModelNew('guanzhu');
@@ -731,7 +842,8 @@ class IndexController extends BaseController
         }
         return json_encode($result);
     }
-
-
-
+    static function ajaxJsonAction($message){
+        header('Content-type: application/json');
+        return json_encode($message);
+    }
 }
