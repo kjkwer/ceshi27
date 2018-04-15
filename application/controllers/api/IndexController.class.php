@@ -625,10 +625,6 @@ class IndexController extends BaseController
         }
         echo self::returnAction(1);
     }
-    //>>切换乡镇
-    function switchoverTownAction(){
-
-    }
     //>>用户修改资料
     function upateUserDateAction(){
         $userId = !empty($_REQUEST["userId"])?$_REQUEST["userId"]:"";  //用户ID
@@ -742,6 +738,90 @@ class IndexController extends BaseController
         }
         echo self::ajaxJsonAction($result);
     }
+    //>>切换城市查找省份
+    function selectProvinceAction(){
+        $model = new ModelNew("city");
+        $data = $model->findBySql("select b.id,b.area_name as name from sl_city as a JOIN sl_area as b on a.province_id = b.id GROUP BY a.province_id");
+        if ($data){
+            $result['status']=true;
+            $result['msg']=$data;
+        }else{
+            $result['status']=false;
+            $result['msg']="没有数据";
+        }
+        echo self::ajaxJsonAction($result);
+    }
+    //>>切换城市查找城市
+    function selectCityAction(){
+        $pid = $_REQUEST["pid"];
+        $model = new ModelNew("city");
+        $data = $model->findBySql("select b.id,b.area_name as name from sl_city as a JOIN sl_area as b ON a.city_id = b.id WHERE b.area_parent_id=$pid GROUP BY a.city_id");
+        if ($data){
+            $result['status']=true;
+            $result['msg']=$data;
+        }else{
+            $result['status']=false;
+            $result['msg']="没有数据";
+        }
+        echo self::ajaxJsonAction($result);
+    }
+    //>>切换城市查找区/县
+    function selectAreaAction(){
+        $pid = $_REQUEST["pid"];
+        $model = new ModelNew("city");
+        $data = $model->findBySql("select b.id,b.area_name as name from sl_city as a JOIN sl_area as b ON a.area_id = b.id WHERE b.area_parent_id=$pid GROUP BY a.area_id");
+        if ($data){
+            $result['status']=true;
+            $result['msg']=$data;
+        }else{
+            $result['status']=false;
+            $result['msg']="没有数据";
+        }
+        echo self::ajaxJsonAction($result);
+    }
+    //>>切换城市查找景点
+    function selectSpotAction(){
+        $pid = $_REQUEST["pid"];
+        $model = new ModelNew("city");
+        $data = $model->findBySql("select scenic_spot as name,identification_code as code from sl_city WHERE area_id=$pid");
+        if ($data){
+            $result['status']=true;
+            $result['msg']=$data;
+        }else{
+            $result['status']=false;
+            $result['msg']="没有数据";
+        }
+        echo self::ajaxJsonAction($result);
+    }
+    //>>切换城市搜索景点
+    function searchSpotAction(){
+        $word = $_REQUEST["word"];
+        $model = new ModelNew("city");
+        $datas = $model->findBySql("select * from sl_city WHERE scenic_spot like '%$word%'");
+        $array = [];
+        $arr = [];
+        if (!empty($datas)){
+            foreach ($datas as $data){
+                $arr["name"] = $data["scenic_spot"];
+                $arr["code"] = $data["identification_code"];
+                $arr["province"] = self::selectDressAction($data["province_id"]);
+                $arr["province_id"] = $data["province_id"];
+                $arr["city"] = self::selectDressAction($data["city_id"]);
+                $arr["city_id"] = $data["city_id"];
+                $arr["area"] = self::selectDressAction($data["area_id"]);
+                $arr["area_id"] = $data["area_id"];
+                $array[] = $arr;
+            }
+        }
+        if ($array){
+            $result['status']=true;
+            $result['msg']=$array;
+        }else{
+            $result['status']=false;
+            $result['msg']="没有数据";
+        }
+        echo self::ajaxJsonAction($result);
+    }
     //>>测试接口
     function testAction(){
         echo self::ajaxJsonAction($_SESSION["a13551275272"]);
@@ -845,5 +925,12 @@ class IndexController extends BaseController
     static function ajaxJsonAction($message){
         header('Content-type: application/json');
         return json_encode($message);
+    }
+
+    //>>通过id查找地区
+    static function selectDressAction($id){
+        $model = new ModelNew("area");
+        $name = $model->where(["id"=>$id])->find("area_name")->one()["area_name"];
+        return $name;
     }
 }
