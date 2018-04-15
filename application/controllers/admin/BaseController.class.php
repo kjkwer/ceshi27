@@ -766,12 +766,16 @@ class BaseController extends Controller {
                          </a>';
 
 	        
-	    }else  {
+	    }else if($type=="省市县（省）" || $type =="省市县（县）"|| $type=="省市县（市）"){
+	        $model = new ModelNew("area");
+	        $name = $model->where(["id"=>$selectValue])->find("area_name")->one()["area_name"];
+	        return $name;
+        }else  {
 	         
 	        return $selectValue;
 	    }
 	     
 	}
-	
-	
+
+
 }
