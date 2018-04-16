@@ -641,7 +641,7 @@ class IndexController extends BaseController
             $result['msg']="电话不能为空！";
             echo json_encode($result);exit;
         }
-        $model=new ModelNew('member');
+        $model=new ModelNew('member'); 
         $msg=$model->where(['yonghuming'=>$phone])->find()->one();
         if (!empty($msg)){
             if ($msg["id"] != $userId){
