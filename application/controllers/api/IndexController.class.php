@@ -653,6 +653,7 @@ class IndexController extends BaseController
         $data["mingcheng"] = $nickName;
         $data["yonghuming"] = $phone;
         $data["touxiang"] = $headPicture;
+        $data["dtime"] = date("Y-m-d H:i:s");
         $_model=new ModelNew('member');
         $rs = $_model->where(["id"=>$userId])->update($data);
         if ($rs){
@@ -741,7 +742,7 @@ class IndexController extends BaseController
     //>>切换城市查找省份
     function selectProvinceAction(){
         $model = new ModelNew("city");
-        $data = $model->findBySql("select b.id,b.area_name as name from sl_city as a JOIN sl_area as b on a.province_id = b.id GROUP BY a.province_id");
+        $data = $model->findBySql("select b.id as value,b.area_name as text from sl_city as a JOIN sl_area as b on a.province_id = b.id GROUP BY a.province_id");
         if ($data){
             $result['status']=true;
             $result['msg']=$data;
@@ -755,7 +756,7 @@ class IndexController extends BaseController
     function selectCityAction(){
         $pid = $_REQUEST["pid"];
         $model = new ModelNew("city");
-        $data = $model->findBySql("select b.id,b.area_name as name from sl_city as a JOIN sl_area as b ON a.city_id = b.id WHERE b.area_parent_id=$pid GROUP BY a.city_id");
+        $data = $model->findBySql("select b.id as value,b.area_name as text from sl_city as a JOIN sl_area as b ON a.city_id = b.id WHERE b.area_parent_id=$pid GROUP BY a.city_id");
         if ($data){
             $result['status']=true;
             $result['msg']=$data;
@@ -769,7 +770,7 @@ class IndexController extends BaseController
     function selectAreaAction(){
         $pid = $_REQUEST["pid"];
         $model = new ModelNew("city");
-        $data = $model->findBySql("select b.id,b.area_name as name from sl_city as a JOIN sl_area as b ON a.area_id = b.id WHERE b.area_parent_id=$pid GROUP BY a.area_id");
+        $data = $model->findBySql("select b.id as value,b.area_name as text from sl_city as a JOIN sl_area as b ON a.area_id = b.id WHERE b.area_parent_id=$pid GROUP BY a.area_id");
         if ($data){
             $result['status']=true;
             $result['msg']=$data;
@@ -783,7 +784,7 @@ class IndexController extends BaseController
     function selectSpotAction(){
         $pid = $_REQUEST["pid"];
         $model = new ModelNew("city");
-        $data = $model->findBySql("select scenic_spot as name,identification_code as code from sl_city WHERE area_id=$pid");
+        $data = $model->findBySql("select id as value,scenic_spot as text,identification_code as code from sl_city WHERE area_id=$pid");
         if ($data){
             $result['status']=true;
             $result['msg']=$data;
@@ -802,6 +803,7 @@ class IndexController extends BaseController
         $arr = [];
         if (!empty($datas)){
             foreach ($datas as $data){
+                $arr["id"] = $data["id"];
                 $arr["name"] = $data["scenic_spot"];
                 $arr["code"] = $data["identification_code"];
                 $arr["province"] = self::selectDressAction($data["province_id"]);
