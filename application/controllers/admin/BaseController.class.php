@@ -404,11 +404,16 @@ class BaseController extends Controller {
 	    }else if($type=="省市县（省）"){
 	        $model = new ModelNew("area");
 	        $datas = $model->where(["area_parent_id"=>0])->find("id,area_name")->all();
-	        $str = "<option value=''>==请选择==</option>";
+	        if ($selectValue){
+                $str = "<option value='".$selectValue."' selected>".self::selectCity($selectValue)."</option>";
+            }else{
+                $str = "<option value=''>==请选择==</option>";
+            }
+
             foreach ($datas as $v){
                 $str .= '<option value="'.$v['id'].'">'.$v["area_name"].'</option>';
             }
-            return '<tr style="display: table-row"><th>'.$kjName.'</th><td><select name="'.$filedName.'" id="province" onchange="show(1)">'.$str.'</select></td></tr><script >
+            return '<tr style="display: table-row"><th>'.$kjName.'</th><td><select name="'.$filedName.'" id="province" onchange="show(1)" class="input">'.$str.'</select></td></tr><script >
                 function show(type){
                     if (type==1){
                         var pid = $("#province").val();
@@ -431,10 +436,19 @@ class BaseController extends Controller {
                 }
 </script>';
         }else if($type=="省市县（市）"){
-
-            return '<tr style="display: table-row"><th>'.$kjName.'</th><td><select name="'.$filedName.'" id="city" onchange="show(2)"><option value="">==请选择==</option></select></td></tr><script ></script>';
+            if ($selectValue){
+                $str = "<option value='".$selectValue."' selected>".self::selectCity($selectValue)."</option>";
+            }else{
+                $str = "<option value=''>==请选择==</option>";
+            }
+            return '<tr style="display: table-row"><th>'.$kjName.'</th><td><select name="'.$filedName.'" id="city" onchange="show(2)" class="input">'.$str.'</select></td></tr><script ></script>';
         }else if($type=="省市县（县）"){
-            return '<tr style="display: table-row"><th>'.$kjName.'</th><td><select name="'.$filedName.'" id="area"><option value="">==请选择==</option></select></td></tr><script ></script>';
+            if ($selectValue){
+                $str = "<option value='".$selectValue."' selected>".self::selectCity($selectValue)."</option>";
+            }else{
+                $str = "<option value=''>==请选择==</option>";
+            }
+            return '<tr style="display: table-row"><th>'.$kjName.'</th><td><select name="'.$filedName.'" id="area" class="input">'.$str.'</select></td></tr><script ></script>';
         }else if($type=="城市选择器(多选)")
 	    {
 	        $_js_str="
@@ -777,5 +791,9 @@ class BaseController extends Controller {
 	     
 	}
 
-
+    public static function selectCity($id){
+        $model = new ModelNew("area");
+        $name = $model->where(["id"=>$id])->find("area_name")->one()["area_name"];
+        return $name;
+    }
 }
