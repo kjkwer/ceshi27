@@ -227,14 +227,15 @@ class IndexController extends BaseController
     function uploadAction(){
         require 'public/qn/autoload.php';
         // 用于签名的公钥和私钥
-        $file=$_FILES["file"]["tmp_name"];
+        $file ="public/images/".time().$_FILES['file']['name'];
 //            $file="public/movie.ogg";
-        $accessKey = 'thCRyOAFJrdk34OTqJ4zplzp4PZQiszrWGoiSzA2';
-        $secretKey = 'VE5HTug-eIlV1PezbFonOK_wtbfBdKf23BpP36l_';
+        move_uploaded_file($_FILES["file"]["tmp_name"],$file);
+        $accessKey = 'Q0f1pbUM3qeoQVQuJqXCv6eRVqBScT0Xr1yusdFr';
+        $secretKey = 'ZqCnQX9VOyOhGP3AMsTvWC00aow68gDpXO-Ip-PB';
         $auth = new Auth($accessKey, $secretKey);
 
-        $bucket="jncsp";
-        $domin='p4tafmzgc.bkt.clouddn.com';
+        $bucket="xzapp";
+        $domin='p6y6kl5y0.bkt.clouddn.com';
         // 构建鉴权对象
         $auth = new Auth($accessKey, $secretKey);
         // 生成上传 Token
@@ -242,7 +243,7 @@ class IndexController extends BaseController
         // 要上传文件的本地路径
         $filePath=$file;
         // 上传到七牛后保存的文件名
-        $key = time().$file;
+        $key = $file;
         // 初始化 UploadManager 对象并进行文件的上传。
         $uploadMgr = new UploadManager();
         // 调用 UploadManager 的 putFile 方法进行文件的上传。
@@ -250,11 +251,11 @@ class IndexController extends BaseController
 //                           echo "\n====> putFile result: \n";
         if ($err !== null) {
             $result['status']=$err;
-            echo self::returnAction($result);
+            echo json_encode($result);
         } else {
             $result['status']=true;
             $result['msg']='http://'.$domin.'/'.$file;
-            echo self::returnAction($result);
+            echo json_encode($result);
         }
     }
     //评论转发的功能
@@ -641,7 +642,7 @@ class IndexController extends BaseController
             $result['msg']="电话不能为空！";
             echo json_encode($result);exit;
         }
-        $model=new ModelNew('member'); 
+        $model=new ModelNew('member');
         $msg=$model->where(['yonghuming'=>$phone])->find()->one();
         if (!empty($msg)){
             if ($msg["id"] != $userId){
@@ -706,19 +707,19 @@ class IndexController extends BaseController
     //>>验证找回密码短信
     function checkLookPwdAction(){
         $result = array("status"=>false,"msg"=>"验证失败");
-        $userId = $_POST["userId"];
+        $tel = $_POST["phone"];
         $authCode = $_POST["authCode"];
         $model = new ModelNew("member");
-        $data = $model->where(["id"=>$userId])->find("yonghuming")->one();
-        $tel = !empty($data["yonghuming"])?$data["yonghuming"]:"";
-        if ($tel==""){
-            $result = array("status"=>false,"msg"=>"电话号码为空");
+        $data = $model->where(["yonghuming"=>$tel])->find("id")->one();
+        $id = !empty($data["id"])?$data["id"]:"";
+        if ($id==""){
+            $result = array("status"=>false,"msg"=>"电话号码错误");
         }else{
             if (empty($_SESSION["a".$tel])){
                 $result = array("status"=>false,"msg"=>"验证码已过期");
             }else{
                 if ($_SESSION["a".$tel]==$authCode){
-                    $result = array("status"=>true,"msg"=>"验证通过");
+                    $result = array("status"=>true,"msg"=>array("userId"=>$id));
                 }else{
                     $result = array("status"=>false,"msg"=>"验证失败");
                 }
@@ -868,21 +869,27 @@ class IndexController extends BaseController
             $rs=$model->where(['buid'=>$id])->find()->all();
             $_model=new ModelNew('member');
             $result='';
+            if ($rs){
             foreach ($rs as $key=>$va){
 
-//                $people=$_model->where(['id'=>$va['uid']])->find()->one();
-                $people=$_model->findBySql("select *from sl_member WHERE id={$va['uid']}")[0];
+                $people=$_model->findBySql("select *from sl_member WHERE id={$va['uid']}");
+                if ($people){
+                    $people=$people[0];
+                    $result[$key]['mingcheng']=$people['mingcheng'];
+                    $result[$key]['uid']=$people['id'];
+                    $result[$key]['touxiang']=$people['touxiang'];
 
-                $result[$key]['mingcheng']=$people['mingcheng'];
-                $result[$key]['uid']=$people['id'];
-                $result[$key]['touxiang']=$people['touxiang'];
-//                $msg=$model->where(['uid'=>$id])->where(['buid'=>$people['id']])->find()->one();
-                $msg=$model->findBySql("select *from sl_guanzhu WHERE uid={$id} and buid={$people['id']}");
-                if ($msg){
-                    $result[$key]['guanzhu']=1;
-                }else{
-                    $result[$key]['guanzhu']=0;
+                    $msg=$model->findBySql("select *from sl_guanzhu WHERE uid={$id} and buid={$people['id']}");
+                    if ($msg){
+                        $result[$key]['guanzhu']=1;
+                    }else{
+                        $result[$key]['guanzhu']=0;
+                    }
                 }
+
+
+
+            }
             }
 
             echo self::returnAction($result);
@@ -934,5 +941,41 @@ class IndexController extends BaseController
         $model = new ModelNew("area");
         $name = $model->where(["id"=>$id])->find("area_name")->one()["area_name"];
         return $name;
+    }
+
+    function uploadspAction(){
+        require 'public/qn/autoload.php';
+        // 用于签名的公钥和私钥
+        $file ="public/images/".time().$_FILES['file']['name'];
+//            $file="public/movie.ogg";
+        move_uploaded_file($_FILES["file"]["tmp_name"],$file);
+        $accessKey = 'Q0f1pbUM3qeoQVQuJqXCv6eRVqBScT0Xr1yusdFr';
+        $secretKey = 'ZqCnQX9VOyOhGP3AMsTvWC00aow68gDpXO-Ip-PB';
+        $auth = new Auth($accessKey, $secretKey);
+
+        $bucket="xzapp";
+        $domin='p6y6kl5y0.bkt.clouddn.com';
+        // 构建鉴权对象
+        $auth = new Auth($accessKey, $secretKey);
+        // 生成上传 Token
+        $token = $auth->uploadToken($bucket);
+        // 要上传文件的本地路径
+        $filePath=$file;
+        // 上传到七牛后保存的文件名
+        $key = $file;
+        // 初始化 UploadManager 对象并进行文件的上传。
+        $uploadMgr = new UploadManager();
+        // 调用 UploadManager 的 putFile 方法进行文件的上传。
+        list($ret, $err) = $uploadMgr->putFile($token, $key, $filePath);
+//                           echo "\n====> putFile result: \n";
+        if ($err !== null) {
+            $result['status']=$err;
+            echo json_encode($result);
+        } else {
+            $result['status']=true;
+            $result['msg']='http://'.$domin.'/'.$file;
+            unlink($file);
+            echo json_encode($result);
+        }
     }
 }

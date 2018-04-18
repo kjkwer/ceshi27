@@ -35,12 +35,12 @@ class SmsController extends BaseController
     public function lookpwdAction(){
         header("Content-type: text/html; charset=gbk2312");
         date_default_timezone_set('PRC');
-        $userId = $_POST["userId"];
+        $phone = $_POST["phone"];
         $model = new ModelNew("member");
-        $data = $model->where(["id"=>$userId])->find("yonghuming")->one();
+        $data = $model->where(["yonghuming"=>$phone])->find("yonghuming")->one();
         $tel = !empty($data["yonghuming"])?$data["yonghuming"]:"";
         if ($tel==''){
-            echo "false";exit;
+            echo json_encode(false);
         }
         $uid = 'SLKJ006499';
         $pwd = '123456';
@@ -55,5 +55,10 @@ class SmsController extends BaseController
         }else{
             echo $result;
         }
+    }
+
+    static function ajaxJsonAction($message){
+        header('Content-type: application/json');
+        return json_encode($message);
     }
 }

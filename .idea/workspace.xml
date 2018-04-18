@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="792b3198-aa07-43e1-b5ca-b0b73aedafe6" name="Default" comment="" />
+    <list default="true" id="792b3198-aa07-43e1-b5ca-b0b73aedafe6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/api/IndexController.class.php" afterPath="$PROJECT_DIR$/application/controllers/api/IndexController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/api/SmsController.class.php" afterPath="$PROJECT_DIR$/application/controllers/api/SmsController.class.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,51 +16,91 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/api/IndexController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="643" column="39" lean-forward="false" selection-start-line="643" selection-start-column="39" selection-end-line="643" selection-end-column="39" />
+            <state relative-caret-position="618">
+              <caret line="740" column="42" lean-forward="true" selection-start-line="740" selection-start-column="42" selection-end-line="740" selection-end-column="42" />
               <folding>
-                <element signature="n#uploadPictureAction#0;n#IndexController#0;n#!!top" expanded="false" />
-                <element signature="n#checkLookPwdAction#0;n#IndexController#0;n#!!top" expanded="false" />
-                <marker date="1523867018796" expanded="true" signature="980:993" ph="select *from... $" />
-                <marker date="1523867018796" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
-                <marker date="1523867018796" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
-                <marker date="1523867018796" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
-                <marker date="1523867018796" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
-                <marker date="1523867018796" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
-                <marker date="1523867018796" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
-                <marker date="1523867018796" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
-                <marker date="1523867018796" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
-                <marker date="1523867018796" expanded="true" signature="11021:11071" ph="select *from... sl_sjx" />
-                <marker date="1523867018796" expanded="true" signature="11206:11244" ph="select buid sl_guanzhu" />
-                <marker date="1523867018796" expanded="true" signature="11622:11654" ph="select *from... sl_member" />
-                <marker date="1523867018796" expanded="true" signature="12081:12154" ph="select count... sl_pinglun" />
-                <marker date="1523867018796" expanded="true" signature="12249:12322" ph="select count... sl_collect" />
-                <marker date="1523867018796" expanded="true" signature="12419:12487" ph="select count... sl_sjx" />
-                <marker date="1523867018796" expanded="true" signature="12888:12926" ph="select count... sl_sjx" />
-                <marker date="1523867018796" expanded="true" signature="12988:13031" ph="select count... sl_guanzhu" />
-                <marker date="1523867018796" expanded="true" signature="13096:13138" ph="select count... sl_collect" />
-                <marker date="1523867018796" expanded="true" signature="13202:13244" ph="select count... sl_guanzhu" />
-                <marker date="1523867018796" expanded="true" signature="13307:13374" ph="select count... sl_xiaoxi" />
-                <marker date="1523867018796" expanded="true" signature="13990:14044" ph="select *from... sl_guanzhu" />
-                <marker date="1523867018796" expanded="true" signature="14218:14250" ph="select *from... sl_member" />
-                <marker date="1523867018796" expanded="true" signature="14810:14877" ph="select *from... sl_ydls" />
-                <marker date="1523867018796" expanded="true" signature="17651:17700" ph="select *from... sl_sjx" />
-                <marker date="1523867018796" expanded="true" signature="18458:18511" ph="select *from... sl_collect" />
-                <marker date="1523867018796" expanded="true" signature="19143:19215" ph="select count... sl_pinglun" />
-                <marker date="1523867018796" expanded="true" signature="19635:19706" ph="select *from... sl_xiaoxi" />
-                <marker date="1523867018796" expanded="true" signature="25014:25043" ph="select * fro... sl_roll_picture" />
-                <marker date="1523867018796" expanded="true" signature="27731:27854" ph="select b.id,... sl_city" />
-                <marker date="1523867018796" expanded="true" signature="28252:28395" ph="select b.id,... sl_city" />
-                <marker date="1523867018796" expanded="true" signature="28794:28937" ph="select b.id,... sl_city" />
-                <marker date="1523867018796" expanded="true" signature="29335:29429" ph="select sceni... sl_city" />
-                <marker date="1523867018796" expanded="true" signature="29834:29888" ph="select * fro... sl_city" />
-                <marker date="1523867018796" expanded="true" signature="32380:32412" ph="select *from... sl_member" />
-                <marker date="1523867018796" expanded="true" signature="32751:32800" ph="select *from... sl_guanzhu" />
-                <marker date="1523867018796" expanded="true" signature="33236:33286" ph="select *from... sl_guanzhu" />
-                <marker date="1523867018796" expanded="true" signature="33350:33399" ph="delete from " />
+                <marker date="1524047934813" expanded="true" signature="980:993" ph="select *from... $" />
+                <marker date="1524047934813" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
+                <marker date="1524047934813" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
+                <marker date="1524047934813" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
+                <marker date="1524047934813" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
+                <marker date="1524047934813" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
+                <marker date="1524047934813" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
+                <marker date="1524047934813" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
+                <marker date="1524047934813" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
+                <marker date="1524047934813" expanded="true" signature="11084:11134" ph="select *from... sl_sjx" />
+                <marker date="1524047934813" expanded="true" signature="11269:11307" ph="select buid sl_guanzhu" />
+                <marker date="1524047934813" expanded="true" signature="11685:11717" ph="select *from... sl_member" />
+                <marker date="1524047934813" expanded="true" signature="12144:12217" ph="select count... sl_pinglun" />
+                <marker date="1524047934813" expanded="true" signature="12312:12385" ph="select count... sl_collect" />
+                <marker date="1524047934813" expanded="true" signature="12482:12550" ph="select count... sl_sjx" />
+                <marker date="1524047934813" expanded="true" signature="12951:12989" ph="select count... sl_sjx" />
+                <marker date="1524047934813" expanded="true" signature="13051:13094" ph="select count... sl_guanzhu" />
+                <marker date="1524047934813" expanded="true" signature="13159:13201" ph="select count... sl_collect" />
+                <marker date="1524047934813" expanded="true" signature="13265:13307" ph="select count... sl_guanzhu" />
+                <marker date="1524047934813" expanded="true" signature="13370:13437" ph="select count... sl_xiaoxi" />
+                <marker date="1524047934813" expanded="true" signature="14053:14107" ph="select *from... sl_guanzhu" />
+                <marker date="1524047934813" expanded="true" signature="14281:14313" ph="select *from... sl_member" />
+                <marker date="1524047934813" expanded="true" signature="14873:14940" ph="select *from... sl_ydls" />
+                <marker date="1524047934813" expanded="true" signature="17714:17763" ph="select *from... sl_sjx" />
+                <marker date="1524047934813" expanded="true" signature="18521:18574" ph="select *from... sl_collect" />
+                <marker date="1524047934813" expanded="true" signature="19206:19278" ph="select count... sl_pinglun" />
+                <marker date="1524047934813" expanded="true" signature="19698:19769" ph="select *from... sl_xiaoxi" />
+                <marker date="1524047934813" expanded="true" signature="25076:25105" ph="select * fro... sl_roll_picture" />
+                <marker date="1524047934813" expanded="true" signature="27782:27905" ph="select b.id " />
+                <marker date="1524047934813" expanded="true" signature="28303:28446" ph="select b.id " />
+                <marker date="1524047934813" expanded="true" signature="28845:28988" ph="select b.id " />
+                <marker date="1524047934813" expanded="true" signature="29386:29480" ph="select id as... " />
+                <marker date="1524047934813" expanded="true" signature="29885:29939" ph="select * fro... sl_city" />
+                <marker date="1524047934813" expanded="true" signature="32376:32408" ph="select *from... sl_member" />
+                <marker date="1524047934813" expanded="true" signature="32731:32780" ph="select *from... sl_guanzhu" />
+                <marker date="1524047934813" expanded="true" signature="33271:33321" ph="select *from... sl_guanzhu" />
+                <marker date="1524047934813" expanded="true" signature="33385:33434" ph="delete from " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmsController.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/api/SmsController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="591">
+              <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/show/Sindex/index_index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutotableController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/admin/AutotableController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3565">
+              <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+              <folding>
+                <marker date="1523785860000" expanded="true" signature="878:940" ph="select * fro... sl_filed" />
+                <marker date="1523785860000" expanded="true" signature="1404:1483" ph="select * fro... sl_filed" />
+                <marker date="1523785860000" expanded="true" signature="2508:2586" ph="select * fro... sl_filed" />
+                <marker date="1523785860000" expanded="true" signature="3137:3215" ph="select * fro... sl_filed" />
+                <marker date="1523785860000" expanded="true" signature="4329:4381" ph="select u1 fr... sl_filed" />
+                <marker date="1523785860000" expanded="true" signature="4470:4582" ph="select * fro... sl_filed" />
+                <marker date="1523785860000" expanded="true" signature="4825:4909" ph="select * fro... sl_filed" />
+                <marker date="1523785860000" expanded="true" signature="5126:5213" ph="select * fro... sl_filed" />
+                <marker date="1523785860000" expanded="true" signature="6234:6286" ph="select u1 fr... sl_filed" />
+                <marker date="1523785860000" expanded="true" signature="6405:6492" ph="select * fro... sl_filed" />
+                <marker date="1523785860000" expanded="true" signature="6867:6951" ph="select * fro... sl_filed" />
               </folding>
             </state>
           </provider>
@@ -91,7 +135,6 @@
       <list>
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/controllers/api/SmsOtherController.class.php" />
-        <option value="$PROJECT_DIR$/application/controllers/api/SmsController.class.php" />
         <option value="$PROJECT_DIR$/application/views/admin/Sautotable/autotable_add.html" />
         <option value="$PROJECT_DIR$/application/views/admin/Sautotable/autotable_add1.html" />
         <option value="$PROJECT_DIR$/application/controllers/admin/AutotableController.class.php" />
@@ -99,6 +142,7 @@
         <option value="&lt;5962451d-2174-4678-a651-2e4f2b573f3f&gt;/application/controllers/api/IndexController.class.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin/BaseController.class.php" />
         <option value="$PROJECT_DIR$/application/controllers/api/IndexController.class.php" />
+        <option value="$PROJECT_DIR$/application/controllers/api/SmsController.class.php" />
       </list>
     </option>
   </component>
@@ -156,6 +200,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ceshi27" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ceshi27" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ceshi27" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ceshi27" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ceshi27" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ceshi27" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sindex" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -246,7 +356,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Photo album" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../motivationaladvertising" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value=";&#9;null&#9;null" />
   </component>
@@ -348,28 +458,33 @@
       <workItem from="1523496946213" duration="15380000" />
       <workItem from="1523582941118" duration="21827000" />
       <workItem from="1523780448354" duration="16847000" />
-      <workItem from="1523845240017" duration="6784000" />
+      <workItem from="1523845240017" duration="8429000" />
+      <workItem from="1523927516004" duration="1275000" />
+      <workItem from="1524016258622" duration="1065000" />
+      <workItem from="1524040172513" duration="23000" />
+      <workItem from="1524040353633" duration="170000" />
+      <workItem from="1524046532404" duration="1998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65779000" />
+    <option name="totallyTimeSpent" value="71955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19045064" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25107297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26984978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -394,48 +509,416 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/controllers/api/IndexController.class.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15640">
+          <caret line="681" column="35" lean-forward="false" selection-start-line="681" selection-start-column="35" selection-end-line="681" selection-end-column="35" />
+          <folding>
+            <marker date="1524047934813" expanded="true" signature="980:993" ph="select *from... $" />
+            <marker date="1524047934813" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
+            <marker date="1524047934813" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
+            <marker date="1524047934813" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="11084:11134" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="11269:11307" ph="select buid sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="11685:11717" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="12144:12217" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="12312:12385" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="12482:12550" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="12951:12989" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="13051:13094" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13159:13201" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="13265:13307" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13370:13437" ph="select count... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="14053:14107" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="14281:14313" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="14873:14940" ph="select *from... sl_ydls" />
+            <marker date="1524047934813" expanded="true" signature="17714:17763" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="18521:18574" ph="select *from... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="19206:19278" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="19698:19769" ph="select *from... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="25076:25105" ph="select * fro... sl_roll_picture" />
+            <marker date="1524047934813" expanded="true" signature="27782:27905" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28303:28446" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28845:28988" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="29386:29480" ph="select id as... " />
+            <marker date="1524047934813" expanded="true" signature="29885:29939" ph="select * fro... sl_city" />
+            <marker date="1524047934813" expanded="true" signature="32376:32408" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="32731:32780" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33271:33321" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33385:33434" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/show/Sindex/index_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/AutotableController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3565">
+          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding>
+            <marker date="1523785860000" expanded="true" signature="878:940" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="1404:1483" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="2508:2586" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="3137:3215" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4329:4381" ph="select u1 fr... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4470:4582" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4825:4909" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="5126:5213" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6234:6286" ph="select u1 fr... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6405:6492" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6867:6951" ph="select * fro... sl_filed" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/api/SmsController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/api/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#uploadPictureAction#0;n#IndexController#0;n#!!top" expanded="false" />
-            <element signature="n#checkLookPwdAction#0;n#IndexController#0;n#!!top" expanded="false" />
-            <marker date="1523867018796" expanded="true" signature="980:993" ph="select *from... $" />
-            <marker date="1523867018796" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
-            <marker date="1523867018796" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
-            <marker date="1523867018796" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="11021:11071" ph="select *from... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="11206:11244" ph="select buid sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="11622:11654" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="12081:12154" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="12249:12322" ph="select count... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="12419:12487" ph="select count... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="12888:12926" ph="select count... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="12988:13031" ph="select count... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="13096:13138" ph="select count... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="13202:13244" ph="select count... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="13307:13374" ph="select count... sl_xiaoxi" />
-            <marker date="1523867018796" expanded="true" signature="13990:14044" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="14218:14250" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="14810:14877" ph="select *from... sl_ydls" />
-            <marker date="1523867018796" expanded="true" signature="17651:17700" ph="select *from... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="18458:18511" ph="select *from... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="19143:19215" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="19635:19706" ph="select *from... sl_xiaoxi" />
-            <marker date="1523867018796" expanded="true" signature="25014:25043" ph="select * fro... sl_roll_picture" />
-            <marker date="1523867018796" expanded="true" signature="27731:27854" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="28252:28395" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="28794:28937" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="29335:29429" ph="select sceni... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="29834:29888" ph="select * fro... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="32380:32412" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="32751:32800" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="33236:33286" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="33350:33399" ph="delete from " />
+            <marker date="1524047934813" expanded="true" signature="980:993" ph="select *from... $" />
+            <marker date="1524047934813" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
+            <marker date="1524047934813" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
+            <marker date="1524047934813" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="11084:11134" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="11269:11307" ph="select buid sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="11685:11717" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="12144:12217" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="12312:12385" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="12482:12550" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="12951:12989" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="13051:13094" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13159:13201" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="13265:13307" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13370:13437" ph="select count... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="14053:14107" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="14281:14313" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="14873:14940" ph="select *from... sl_ydls" />
+            <marker date="1524047934813" expanded="true" signature="17714:17763" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="18521:18574" ph="select *from... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="19206:19278" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="19698:19769" ph="select *from... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="25076:25105" ph="select * fro... sl_roll_picture" />
+            <marker date="1524047934813" expanded="true" signature="27782:27905" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28303:28446" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28845:28988" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="29386:29480" ph="select id as... " />
+            <marker date="1524047934813" expanded="true" signature="29885:29939" ph="select * fro... sl_city" />
+            <marker date="1524047934813" expanded="true" signature="32376:32408" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="32731:32780" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33271:33321" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33385:33434" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/show/Sindex/index_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/AutotableController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3565">
+          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding>
+            <marker date="1523785860000" expanded="true" signature="878:940" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="1404:1483" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="2508:2586" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="3137:3215" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4329:4381" ph="select u1 fr... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4470:4582" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4825:4909" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="5126:5213" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6234:6286" ph="select u1 fr... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6405:6492" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6867:6951" ph="select * fro... sl_filed" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/api/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15042">
+          <caret line="655" column="45" lean-forward="false" selection-start-line="655" selection-start-column="45" selection-end-line="655" selection-end-column="45" />
+          <folding>
+            <marker date="1524047934813" expanded="true" signature="980:993" ph="select *from... $" />
+            <marker date="1524047934813" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
+            <marker date="1524047934813" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
+            <marker date="1524047934813" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="11084:11134" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="11269:11307" ph="select buid sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="11685:11717" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="12144:12217" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="12312:12385" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="12482:12550" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="12951:12989" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="13051:13094" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13159:13201" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="13265:13307" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13370:13437" ph="select count... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="14053:14107" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="14281:14313" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="14873:14940" ph="select *from... sl_ydls" />
+            <marker date="1524047934813" expanded="true" signature="17714:17763" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="18521:18574" ph="select *from... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="19206:19278" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="19698:19769" ph="select *from... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="25076:25105" ph="select * fro... sl_roll_picture" />
+            <marker date="1524047934813" expanded="true" signature="27782:27905" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28303:28446" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28845:28988" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="29386:29480" ph="select id as... " />
+            <marker date="1524047934813" expanded="true" signature="29885:29939" ph="select * fro... sl_city" />
+            <marker date="1524047934813" expanded="true" signature="32376:32408" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="32731:32780" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33271:33321" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33385:33434" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/AutotableController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3565">
+          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding>
+            <marker date="1523785860000" expanded="true" signature="878:940" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="1404:1483" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="2508:2586" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="3137:3215" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4329:4381" ph="select u1 fr... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4470:4582" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4825:4909" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="5126:5213" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6234:6286" ph="select u1 fr... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6405:6492" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6867:6951" ph="select * fro... sl_filed" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/show/Sindex/index_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/api/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15042">
+          <caret line="655" column="45" lean-forward="false" selection-start-line="655" selection-start-column="45" selection-end-line="655" selection-end-column="45" />
+          <folding>
+            <marker date="1524047934813" expanded="true" signature="980:993" ph="select *from... $" />
+            <marker date="1524047934813" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
+            <marker date="1524047934813" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
+            <marker date="1524047934813" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="11084:11134" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="11269:11307" ph="select buid sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="11685:11717" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="12144:12217" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="12312:12385" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="12482:12550" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="12951:12989" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="13051:13094" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13159:13201" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="13265:13307" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13370:13437" ph="select count... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="14053:14107" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="14281:14313" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="14873:14940" ph="select *from... sl_ydls" />
+            <marker date="1524047934813" expanded="true" signature="17714:17763" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="18521:18574" ph="select *from... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="19206:19278" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="19698:19769" ph="select *from... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="25076:25105" ph="select * fro... sl_roll_picture" />
+            <marker date="1524047934813" expanded="true" signature="27782:27905" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28303:28446" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28845:28988" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="29386:29480" ph="select id as... " />
+            <marker date="1524047934813" expanded="true" signature="29885:29939" ph="select * fro... sl_city" />
+            <marker date="1524047934813" expanded="true" signature="32376:32408" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="32731:32780" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33271:33321" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33385:33434" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/AutotableController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3565">
+          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding>
+            <marker date="1523785860000" expanded="true" signature="878:940" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="1404:1483" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="2508:2586" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="3137:3215" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4329:4381" ph="select u1 fr... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4470:4582" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4825:4909" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="5126:5213" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6234:6286" ph="select u1 fr... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6405:6492" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6867:6951" ph="select * fro... sl_filed" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/show/Sindex/index_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/api/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15065">
+          <caret line="655" column="45" lean-forward="false" selection-start-line="655" selection-start-column="45" selection-end-line="655" selection-end-column="45" />
+          <folding>
+            <marker date="1524047934813" expanded="true" signature="980:993" ph="select *from... $" />
+            <marker date="1524047934813" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
+            <marker date="1524047934813" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
+            <marker date="1524047934813" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="11084:11134" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="11269:11307" ph="select buid sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="11685:11717" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="12144:12217" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="12312:12385" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="12482:12550" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="12951:12989" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="13051:13094" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13159:13201" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="13265:13307" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13370:13437" ph="select count... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="14053:14107" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="14281:14313" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="14873:14940" ph="select *from... sl_ydls" />
+            <marker date="1524047934813" expanded="true" signature="17714:17763" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="18521:18574" ph="select *from... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="19206:19278" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="19698:19769" ph="select *from... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="25076:25105" ph="select * fro... sl_roll_picture" />
+            <marker date="1524047934813" expanded="true" signature="27782:27905" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28303:28446" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28845:28988" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="29386:29480" ph="select id as... " />
+            <marker date="1524047934813" expanded="true" signature="29885:29939" ph="select * fro... sl_city" />
+            <marker date="1524047934813" expanded="true" signature="32376:32408" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="32731:32780" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33271:33321" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33385:33434" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/AutotableController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3588">
+          <caret line="156" column="70" lean-forward="true" selection-start-line="156" selection-start-column="8" selection-end-line="156" selection-end-column="70" />
+          <folding>
+            <marker date="1523785860000" expanded="true" signature="878:940" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="1404:1483" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="2508:2586" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="3137:3215" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4329:4381" ph="select u1 fr... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4470:4582" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4825:4909" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="5126:5213" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6234:6286" ph="select u1 fr... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6405:6492" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6867:6951" ph="select * fro... sl_filed" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/api/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1524047934813" expanded="true" signature="980:993" ph="select *from... $" />
+            <marker date="1524047934813" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
+            <marker date="1524047934813" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
+            <marker date="1524047934813" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="11084:11134" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="11269:11307" ph="select buid sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="11685:11717" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="12144:12217" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="12312:12385" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="12482:12550" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="12951:12989" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="13051:13094" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13159:13201" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="13265:13307" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13370:13437" ph="select count... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="14053:14107" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="14281:14313" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="14873:14940" ph="select *from... sl_ydls" />
+            <marker date="1524047934813" expanded="true" signature="17714:17763" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="18521:18574" ph="select *from... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="19206:19278" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="19698:19769" ph="select *from... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="25076:25105" ph="select * fro... sl_roll_picture" />
+            <marker date="1524047934813" expanded="true" signature="27782:27905" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28303:28446" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28845:28988" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="29386:29480" ph="select id as... " />
+            <marker date="1524047934813" expanded="true" signature="29885:29939" ph="select * fro... sl_city" />
+            <marker date="1524047934813" expanded="true" signature="32376:32408" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="32731:32780" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33271:33321" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33385:33434" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -445,108 +928,108 @@
         <state relative-caret-position="17687">
           <caret line="769" column="12" lean-forward="false" selection-start-line="769" selection-start-column="12" selection-end-line="771" selection-end-column="25" />
           <folding>
-            <marker date="1523846967177" expanded="true" signature="940:978" ph="select * fro... sl_canshu" />
-            <marker date="1523846967177" expanded="true" signature="2225:2258" ph="select * fro... sl_canshu" />
-            <marker date="1523846967177" expanded="true" signature="3116:3135" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="3136:3385" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="3190:3365" ph="..." />
-            <marker date="1523846967177" expanded="false" signature="3256:3296" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="3496:4082" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="3592:4056" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="3628:4032" ph="{&quot;title&quot;: '上传图片 '...}" />
-            <marker date="1523846967177" expanded="true" signature="4141:4160" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="4161:4880" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="4215:4860" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="4382:4612" ph="..." />
-            <marker date="1523846967177" expanded="false" signature="4461:4513" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="5883:5902" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="5903:6040" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="5951:6026" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="6137:6644" ph="..." />
-            <marker date="1523846967177" expanded="false" signature="6186:6232" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="6495:6615" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="6732:7122" ph="..." />
-            <marker date="1523846967177" expanded="false" signature="6923:6934" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="7208:7464" ph="..." />
-            <marker date="1523846967177" expanded="false" signature="7356:7368" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="7550:7843" ph="..." />
-            <marker date="1523846967177" expanded="false" signature="7698:7710" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="7917:8115" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="7965:8102" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="8368:8387" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="8388:8721" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="9086:9105" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="9106:9457" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="9676:9695" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="9696:11020" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="9750:10990" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="10131:10913" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="10185:10803" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="10314:10760" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="11141:11726" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="11237:11700" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="11273:11677" ph="{&quot;title&quot;: '上传文件 '...}" />
-            <marker date="1523846967177" expanded="true" signature="11785:11804" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="11805:12281" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="11859:12261" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="12482:12501" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="12502:14275" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="12556:14245" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="12953:14206" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="13025:14078" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="13162:14031" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="14982:15001" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="15002:16419" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="15056:16389" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="15556:16366" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="15624:16242" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="15753:16199" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="16624:16643" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="16644:17958" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="16698:17928" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="17095:17905" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="17163:17781" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="17292:17738" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="18539:18557" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="18694:19675" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="18732:19666" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="18766:18804" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="18766:18845" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="18862:18937" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="19033:19640" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="19167:19291" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="19332:19496" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="19536:19618" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="19666:19675" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="19981:19999" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="20448:20466" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="20701:21285" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="20797:21259" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="20833:21235" ph="{&quot;title&quot;: '城市选择器 '...}" />
-            <marker date="1523846967177" expanded="true" signature="21673:21692" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="21693:22426" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="21748:22406" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="22139:22209" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="22545:23129" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="22641:23103" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="22677:23079" ph="{&quot;title&quot;: '城市选择器 '...}" />
-            <marker date="1523846967177" expanded="true" signature="23517:23536" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="23537:24270" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="23592:24250" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="23983:24053" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="24384:25573" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="24480:25198" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="24625:24740" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="24775:25175" ph="{&quot;title&quot;: '批量上传'...}" />
-            <marker date="1523846967177" expanded="true" signature="25313:25534" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="25355:25508" ph="{&quot;placeholder&quot;: 'application/views/admin/images/nopic.jpg'...}" />
-            <marker date="1523846967177" expanded="true" signature="26483:26502" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="26503:27036" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="26557:27016" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="26910:26996" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="27260:27491" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="27308:27478" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="28647:28735" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="940:978" ph="select * fro... sl_canshu" />
+            <marker date="1523846940000" expanded="true" signature="2225:2258" ph="select * fro... sl_canshu" />
+            <marker date="1523846940000" expanded="true" signature="3116:3135" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="3136:3385" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="3190:3365" ph="..." />
+            <marker date="1523846940000" expanded="false" signature="3256:3296" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="3496:4082" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="3592:4056" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="3628:4032" ph="{&quot;title&quot;: '上传图片 '...}" />
+            <marker date="1523846940000" expanded="true" signature="4141:4160" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="4161:4880" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="4215:4860" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="4382:4612" ph="..." />
+            <marker date="1523846940000" expanded="false" signature="4461:4513" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="5883:5902" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="5903:6040" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="5951:6026" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="6137:6644" ph="..." />
+            <marker date="1523846940000" expanded="false" signature="6186:6232" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="6495:6615" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="6732:7122" ph="..." />
+            <marker date="1523846940000" expanded="false" signature="6923:6934" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="7208:7464" ph="..." />
+            <marker date="1523846940000" expanded="false" signature="7356:7368" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="7550:7843" ph="..." />
+            <marker date="1523846940000" expanded="false" signature="7698:7710" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="7917:8115" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="7965:8102" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="8368:8387" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="8388:8721" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="9086:9105" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="9106:9457" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="9676:9695" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="9696:11020" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="9750:10990" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="10131:10913" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="10185:10803" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="10314:10760" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="11141:11726" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="11237:11700" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="11273:11677" ph="{&quot;title&quot;: '上传文件 '...}" />
+            <marker date="1523846940000" expanded="true" signature="11785:11804" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="11805:12281" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="11859:12261" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="12482:12501" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="12502:14275" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="12556:14245" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="12953:14206" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="13025:14078" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="13162:14031" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="14982:15001" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="15002:16419" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="15056:16389" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="15556:16366" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="15624:16242" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="15753:16199" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="16624:16643" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="16644:17958" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="16698:17928" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="17095:17905" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="17163:17781" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="17292:17738" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="18539:18557" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="18694:19675" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="18732:19666" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="18766:18804" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="18766:18845" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="18862:18937" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="19033:19640" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="19167:19291" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="19332:19496" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="19536:19618" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="19666:19675" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="19981:19999" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="20448:20466" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="20701:21285" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="20797:21259" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="20833:21235" ph="{&quot;title&quot;: '城市选择器 '...}" />
+            <marker date="1523846940000" expanded="true" signature="21673:21692" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="21693:22426" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="21748:22406" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="22139:22209" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="22545:23129" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="22641:23103" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="22677:23079" ph="{&quot;title&quot;: '城市选择器 '...}" />
+            <marker date="1523846940000" expanded="true" signature="23517:23536" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="23537:24270" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="23592:24250" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="23983:24053" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="24384:25573" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="24480:25198" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="24625:24740" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="24775:25175" ph="{&quot;title&quot;: '批量上传'...}" />
+            <marker date="1523846940000" expanded="true" signature="25313:25534" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="25355:25508" ph="{&quot;placeholder&quot;: 'application/views/admin/images/nopic.jpg'...}" />
+            <marker date="1523846940000" expanded="true" signature="26483:26502" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="26503:27036" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="26557:27016" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="26910:26996" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="27260:27491" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="27308:27478" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="28647:28735" ph="..." />
           </folding>
         </state>
       </provider>
@@ -556,45 +1039,43 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#uploadPictureAction#0;n#IndexController#0;n#!!top" expanded="false" />
-            <element signature="n#checkLookPwdAction#0;n#IndexController#0;n#!!top" expanded="false" />
-            <marker date="1523867018796" expanded="true" signature="980:993" ph="select *from... $" />
-            <marker date="1523867018796" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
-            <marker date="1523867018796" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
-            <marker date="1523867018796" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="11021:11071" ph="select *from... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="11206:11244" ph="select buid sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="11622:11654" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="12081:12154" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="12249:12322" ph="select count... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="12419:12487" ph="select count... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="12888:12926" ph="select count... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="12988:13031" ph="select count... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="13096:13138" ph="select count... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="13202:13244" ph="select count... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="13307:13374" ph="select count... sl_xiaoxi" />
-            <marker date="1523867018796" expanded="true" signature="13990:14044" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="14218:14250" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="14810:14877" ph="select *from... sl_ydls" />
-            <marker date="1523867018796" expanded="true" signature="17651:17700" ph="select *from... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="18458:18511" ph="select *from... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="19143:19215" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="19635:19706" ph="select *from... sl_xiaoxi" />
-            <marker date="1523867018796" expanded="true" signature="25014:25043" ph="select * fro... sl_roll_picture" />
-            <marker date="1523867018796" expanded="true" signature="27731:27854" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="28252:28395" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="28794:28937" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="29335:29429" ph="select sceni... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="29834:29888" ph="select * fro... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="32380:32412" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="32751:32800" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="33236:33286" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="33350:33399" ph="delete from " />
+            <marker date="1524047934813" expanded="true" signature="980:993" ph="select *from... $" />
+            <marker date="1524047934813" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
+            <marker date="1524047934813" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
+            <marker date="1524047934813" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="11084:11134" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="11269:11307" ph="select buid sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="11685:11717" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="12144:12217" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="12312:12385" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="12482:12550" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="12951:12989" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="13051:13094" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13159:13201" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="13265:13307" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13370:13437" ph="select count... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="14053:14107" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="14281:14313" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="14873:14940" ph="select *from... sl_ydls" />
+            <marker date="1524047934813" expanded="true" signature="17714:17763" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="18521:18574" ph="select *from... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="19206:19278" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="19698:19769" ph="select *from... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="25076:25105" ph="select * fro... sl_roll_picture" />
+            <marker date="1524047934813" expanded="true" signature="27782:27905" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28303:28446" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28845:28988" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="29386:29480" ph="select id as... " />
+            <marker date="1524047934813" expanded="true" signature="29885:29939" ph="select * fro... sl_city" />
+            <marker date="1524047934813" expanded="true" signature="32376:32408" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="32731:32780" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33271:33321" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33385:33434" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -604,45 +1085,43 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#uploadPictureAction#0;n#IndexController#0;n#!!top" expanded="false" />
-            <element signature="n#checkLookPwdAction#0;n#IndexController#0;n#!!top" expanded="false" />
-            <marker date="1523867018796" expanded="true" signature="980:993" ph="select *from... $" />
-            <marker date="1523867018796" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
-            <marker date="1523867018796" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
-            <marker date="1523867018796" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="11021:11071" ph="select *from... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="11206:11244" ph="select buid sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="11622:11654" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="12081:12154" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="12249:12322" ph="select count... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="12419:12487" ph="select count... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="12888:12926" ph="select count... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="12988:13031" ph="select count... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="13096:13138" ph="select count... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="13202:13244" ph="select count... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="13307:13374" ph="select count... sl_xiaoxi" />
-            <marker date="1523867018796" expanded="true" signature="13990:14044" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="14218:14250" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="14810:14877" ph="select *from... sl_ydls" />
-            <marker date="1523867018796" expanded="true" signature="17651:17700" ph="select *from... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="18458:18511" ph="select *from... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="19143:19215" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="19635:19706" ph="select *from... sl_xiaoxi" />
-            <marker date="1523867018796" expanded="true" signature="25014:25043" ph="select * fro... sl_roll_picture" />
-            <marker date="1523867018796" expanded="true" signature="27731:27854" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="28252:28395" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="28794:28937" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="29335:29429" ph="select sceni... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="29834:29888" ph="select * fro... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="32380:32412" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="32751:32800" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="33236:33286" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="33350:33399" ph="delete from " />
+            <marker date="1524047934813" expanded="true" signature="980:993" ph="select *from... $" />
+            <marker date="1524047934813" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
+            <marker date="1524047934813" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
+            <marker date="1524047934813" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="11084:11134" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="11269:11307" ph="select buid sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="11685:11717" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="12144:12217" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="12312:12385" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="12482:12550" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="12951:12989" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="13051:13094" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13159:13201" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="13265:13307" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13370:13437" ph="select count... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="14053:14107" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="14281:14313" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="14873:14940" ph="select *from... sl_ydls" />
+            <marker date="1524047934813" expanded="true" signature="17714:17763" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="18521:18574" ph="select *from... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="19206:19278" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="19698:19769" ph="select *from... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="25076:25105" ph="select * fro... sl_roll_picture" />
+            <marker date="1524047934813" expanded="true" signature="27782:27905" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28303:28446" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28845:28988" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="29386:29480" ph="select id as... " />
+            <marker date="1524047934813" expanded="true" signature="29885:29939" ph="select * fro... sl_city" />
+            <marker date="1524047934813" expanded="true" signature="32376:32408" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="32731:32780" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33271:33321" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33385:33434" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -667,45 +1146,43 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#uploadPictureAction#0;n#IndexController#0;n#!!top" expanded="false" />
-            <element signature="n#checkLookPwdAction#0;n#IndexController#0;n#!!top" expanded="false" />
-            <marker date="1523867018796" expanded="true" signature="980:993" ph="select *from... $" />
-            <marker date="1523867018796" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
-            <marker date="1523867018796" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
-            <marker date="1523867018796" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="11021:11071" ph="select *from... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="11206:11244" ph="select buid sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="11622:11654" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="12081:12154" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="12249:12322" ph="select count... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="12419:12487" ph="select count... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="12888:12926" ph="select count... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="12988:13031" ph="select count... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="13096:13138" ph="select count... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="13202:13244" ph="select count... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="13307:13374" ph="select count... sl_xiaoxi" />
-            <marker date="1523867018796" expanded="true" signature="13990:14044" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="14218:14250" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="14810:14877" ph="select *from... sl_ydls" />
-            <marker date="1523867018796" expanded="true" signature="17651:17700" ph="select *from... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="18458:18511" ph="select *from... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="19143:19215" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="19635:19706" ph="select *from... sl_xiaoxi" />
-            <marker date="1523867018796" expanded="true" signature="25014:25043" ph="select * fro... sl_roll_picture" />
-            <marker date="1523867018796" expanded="true" signature="27731:27854" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="28252:28395" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="28794:28937" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="29335:29429" ph="select sceni... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="29834:29888" ph="select * fro... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="32380:32412" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="32751:32800" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="33236:33286" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="33350:33399" ph="delete from " />
+            <marker date="1524047934813" expanded="true" signature="980:993" ph="select *from... $" />
+            <marker date="1524047934813" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
+            <marker date="1524047934813" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
+            <marker date="1524047934813" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="11084:11134" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="11269:11307" ph="select buid sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="11685:11717" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="12144:12217" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="12312:12385" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="12482:12550" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="12951:12989" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="13051:13094" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13159:13201" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="13265:13307" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13370:13437" ph="select count... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="14053:14107" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="14281:14313" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="14873:14940" ph="select *from... sl_ydls" />
+            <marker date="1524047934813" expanded="true" signature="17714:17763" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="18521:18574" ph="select *from... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="19206:19278" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="19698:19769" ph="select *from... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="25076:25105" ph="select * fro... sl_roll_picture" />
+            <marker date="1524047934813" expanded="true" signature="27782:27905" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28303:28446" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28845:28988" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="29386:29480" ph="select id as... " />
+            <marker date="1524047934813" expanded="true" signature="29885:29939" ph="select * fro... sl_city" />
+            <marker date="1524047934813" expanded="true" signature="32376:32408" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="32731:32780" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33271:33321" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33385:33434" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -719,14 +1196,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/api/SmsOtherController.class.php" />
-    <entry file="file://$PROJECT_DIR$/application/controllers/api/SmsController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="43" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -773,26 +1242,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/admin/AutotableController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding>
-            <marker date="1523785915379" expanded="true" signature="878:940" ph="select * fro... sl_filed" />
-            <marker date="1523785915379" expanded="true" signature="1404:1483" ph="select * fro... sl_filed" />
-            <marker date="1523785915379" expanded="true" signature="2508:2586" ph="select * fro... sl_filed" />
-            <marker date="1523785915379" expanded="true" signature="3137:3215" ph="select * fro... sl_filed" />
-            <marker date="1523785915379" expanded="true" signature="4329:4381" ph="select u1 fr... sl_filed" />
-            <marker date="1523785915379" expanded="true" signature="4470:4582" ph="select * fro... sl_filed" />
-            <marker date="1523785915379" expanded="true" signature="4825:4909" ph="select * fro... sl_filed" />
-            <marker date="1523785915379" expanded="true" signature="5126:5213" ph="select * fro... sl_filed" />
-            <marker date="1523785915379" expanded="true" signature="6234:6286" ph="select u1 fr... sl_filed" />
-            <marker date="1523785915379" expanded="true" signature="6405:6492" ph="select * fro... sl_filed" />
-            <marker date="1523785915379" expanded="true" signature="6867:6951" ph="select * fro... sl_filed" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/admin/CommonController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -820,157 +1269,191 @@
         <state relative-caret-position="213">
           <caret line="447" column="18" lean-forward="true" selection-start-line="447" selection-start-column="18" selection-end-line="447" selection-end-column="18" />
           <folding>
-            <marker date="1523846967177" expanded="true" signature="940:978" ph="select * fro... sl_canshu" />
-            <marker date="1523846967177" expanded="true" signature="2225:2258" ph="select * fro... sl_canshu" />
-            <marker date="1523846967177" expanded="true" signature="3116:3135" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="3136:3385" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="3190:3365" ph="..." />
-            <marker date="1523846967177" expanded="false" signature="3256:3296" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="3496:4082" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="3592:4056" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="3628:4032" ph="{&quot;title&quot;: '上传图片 '...}" />
-            <marker date="1523846967177" expanded="true" signature="4141:4160" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="4161:4880" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="4215:4860" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="4382:4612" ph="..." />
-            <marker date="1523846967177" expanded="false" signature="4461:4513" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="5883:5902" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="5903:6040" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="5951:6026" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="6137:6644" ph="..." />
-            <marker date="1523846967177" expanded="false" signature="6186:6232" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="6495:6615" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="6732:7122" ph="..." />
-            <marker date="1523846967177" expanded="false" signature="6923:6934" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="7208:7464" ph="..." />
-            <marker date="1523846967177" expanded="false" signature="7356:7368" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="7550:7843" ph="..." />
-            <marker date="1523846967177" expanded="false" signature="7698:7710" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="7917:8115" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="7965:8102" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="8368:8387" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="8388:8721" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="9086:9105" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="9106:9457" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="9676:9695" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="9696:11020" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="9750:10990" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="10131:10913" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="10185:10803" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="10314:10760" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="11141:11726" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="11237:11700" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="11273:11677" ph="{&quot;title&quot;: '上传文件 '...}" />
-            <marker date="1523846967177" expanded="true" signature="11785:11804" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="11805:12281" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="11859:12261" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="12482:12501" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="12502:14275" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="12556:14245" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="12953:14206" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="13025:14078" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="13162:14031" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="14982:15001" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="15002:16419" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="15056:16389" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="15556:16366" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="15624:16242" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="15753:16199" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="16624:16643" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="16644:17958" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="16698:17928" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="17095:17905" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="17163:17781" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="17292:17738" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="18539:18557" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="18694:19675" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="18732:19666" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="18766:18804" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="18766:18845" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="18862:18937" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="19033:19640" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="19167:19291" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="19332:19496" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="19536:19618" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="19666:19675" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="19981:19999" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="20448:20466" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="20701:21285" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="20797:21259" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="20833:21235" ph="{&quot;title&quot;: '城市选择器 '...}" />
-            <marker date="1523846967177" expanded="true" signature="21673:21692" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="21693:22426" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="21748:22406" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="22139:22209" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="22545:23129" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="22641:23103" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="22677:23079" ph="{&quot;title&quot;: '城市选择器 '...}" />
-            <marker date="1523846967177" expanded="true" signature="23517:23536" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="23537:24270" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="23592:24250" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="23983:24053" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="24384:25573" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="24480:25198" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="24625:24740" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="24775:25175" ph="{&quot;title&quot;: '批量上传'...}" />
-            <marker date="1523846967177" expanded="true" signature="25313:25534" ph="{...}" />
-            <marker date="1523846967177" expanded="true" signature="25355:25508" ph="{&quot;placeholder&quot;: 'application/views/admin/images/nopic.jpg'...}" />
-            <marker date="1523846967177" expanded="true" signature="26483:26502" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="26503:27036" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="26557:27016" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="26910:26996" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="27260:27491" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="27308:27478" ph="..." />
-            <marker date="1523846967177" expanded="true" signature="28647:28735" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="940:978" ph="select * fro... sl_canshu" />
+            <marker date="1523846940000" expanded="true" signature="2225:2258" ph="select * fro... sl_canshu" />
+            <marker date="1523846940000" expanded="true" signature="3116:3135" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="3136:3385" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="3190:3365" ph="..." />
+            <marker date="1523846940000" expanded="false" signature="3256:3296" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="3496:4082" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="3592:4056" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="3628:4032" ph="{&quot;title&quot;: '上传图片 '...}" />
+            <marker date="1523846940000" expanded="true" signature="4141:4160" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="4161:4880" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="4215:4860" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="4382:4612" ph="..." />
+            <marker date="1523846940000" expanded="false" signature="4461:4513" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="5883:5902" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="5903:6040" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="5951:6026" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="6137:6644" ph="..." />
+            <marker date="1523846940000" expanded="false" signature="6186:6232" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="6495:6615" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="6732:7122" ph="..." />
+            <marker date="1523846940000" expanded="false" signature="6923:6934" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="7208:7464" ph="..." />
+            <marker date="1523846940000" expanded="false" signature="7356:7368" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="7550:7843" ph="..." />
+            <marker date="1523846940000" expanded="false" signature="7698:7710" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="7917:8115" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="7965:8102" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="8368:8387" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="8388:8721" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="9086:9105" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="9106:9457" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="9676:9695" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="9696:11020" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="9750:10990" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="10131:10913" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="10185:10803" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="10314:10760" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="11141:11726" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="11237:11700" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="11273:11677" ph="{&quot;title&quot;: '上传文件 '...}" />
+            <marker date="1523846940000" expanded="true" signature="11785:11804" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="11805:12281" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="11859:12261" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="12482:12501" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="12502:14275" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="12556:14245" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="12953:14206" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="13025:14078" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="13162:14031" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="14982:15001" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="15002:16419" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="15056:16389" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="15556:16366" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="15624:16242" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="15753:16199" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="16624:16643" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="16644:17958" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="16698:17928" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="17095:17905" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="17163:17781" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="17292:17738" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="18539:18557" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="18694:19675" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="18732:19666" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="18766:18804" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="18766:18845" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="18862:18937" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="19033:19640" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="19167:19291" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="19332:19496" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="19536:19618" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="19666:19675" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="19981:19999" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="20448:20466" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="20701:21285" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="20797:21259" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="20833:21235" ph="{&quot;title&quot;: '城市选择器 '...}" />
+            <marker date="1523846940000" expanded="true" signature="21673:21692" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="21693:22426" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="21748:22406" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="22139:22209" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="22545:23129" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="22641:23103" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="22677:23079" ph="{&quot;title&quot;: '城市选择器 '...}" />
+            <marker date="1523846940000" expanded="true" signature="23517:23536" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="23537:24270" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="23592:24250" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="23983:24053" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="24384:25573" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="24480:25198" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="24625:24740" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="24775:25175" ph="{&quot;title&quot;: '批量上传'...}" />
+            <marker date="1523846940000" expanded="true" signature="25313:25534" ph="{...}" />
+            <marker date="1523846940000" expanded="true" signature="25355:25508" ph="{&quot;placeholder&quot;: 'application/views/admin/images/nopic.jpg'...}" />
+            <marker date="1523846940000" expanded="true" signature="26483:26502" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="26503:27036" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="26557:27016" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="26910:26996" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="27260:27491" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="27308:27478" ph="..." />
+            <marker date="1523846940000" expanded="true" signature="28647:28735" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/AutotableController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3565">
+          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding>
+            <marker date="1523785860000" expanded="true" signature="878:940" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="1404:1483" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="2508:2586" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="3137:3215" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4329:4381" ph="select u1 fr... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4470:4582" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="4825:4909" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="5126:5213" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6234:6286" ph="select u1 fr... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6405:6492" ph="select * fro... sl_filed" />
+            <marker date="1523785860000" expanded="true" signature="6867:6951" ph="select * fro... sl_filed" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/show/Sindex/index_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/api/IndexController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="643" column="39" lean-forward="false" selection-start-line="643" selection-start-column="39" selection-end-line="643" selection-end-column="39" />
+        <state relative-caret-position="618">
+          <caret line="740" column="42" lean-forward="true" selection-start-line="740" selection-start-column="42" selection-end-line="740" selection-end-column="42" />
           <folding>
-            <element signature="n#uploadPictureAction#0;n#IndexController#0;n#!!top" expanded="false" />
-            <element signature="n#checkLookPwdAction#0;n#IndexController#0;n#!!top" expanded="false" />
-            <marker date="1523867018796" expanded="true" signature="980:993" ph="select *from... $" />
-            <marker date="1523867018796" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
-            <marker date="1523867018796" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
-            <marker date="1523867018796" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="11021:11071" ph="select *from... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="11206:11244" ph="select buid sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="11622:11654" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="12081:12154" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="12249:12322" ph="select count... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="12419:12487" ph="select count... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="12888:12926" ph="select count... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="12988:13031" ph="select count... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="13096:13138" ph="select count... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="13202:13244" ph="select count... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="13307:13374" ph="select count... sl_xiaoxi" />
-            <marker date="1523867018796" expanded="true" signature="13990:14044" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="14218:14250" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="14810:14877" ph="select *from... sl_ydls" />
-            <marker date="1523867018796" expanded="true" signature="17651:17700" ph="select *from... sl_sjx" />
-            <marker date="1523867018796" expanded="true" signature="18458:18511" ph="select *from... sl_collect" />
-            <marker date="1523867018796" expanded="true" signature="19143:19215" ph="select count... sl_pinglun" />
-            <marker date="1523867018796" expanded="true" signature="19635:19706" ph="select *from... sl_xiaoxi" />
-            <marker date="1523867018796" expanded="true" signature="25014:25043" ph="select * fro... sl_roll_picture" />
-            <marker date="1523867018796" expanded="true" signature="27731:27854" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="28252:28395" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="28794:28937" ph="select b.id,... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="29335:29429" ph="select sceni... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="29834:29888" ph="select * fro... sl_city" />
-            <marker date="1523867018796" expanded="true" signature="32380:32412" ph="select *from... sl_member" />
-            <marker date="1523867018796" expanded="true" signature="32751:32800" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="33236:33286" ph="select *from... sl_guanzhu" />
-            <marker date="1523867018796" expanded="true" signature="33350:33399" ph="delete from " />
+            <marker date="1524047934813" expanded="true" signature="980:993" ph="select *from... $" />
+            <marker date="1524047934813" expanded="true" signature="2022:2152" ph="select *from... sl_fengcai" />
+            <marker date="1524047934813" expanded="true" signature="2379:2437" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="2964:3104" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3232:3264" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="3513:3547" ph="select *from... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="3684:3716" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="7783:7882" ph="select *from... sl_zonghe" />
+            <marker date="1524047934813" expanded="true" signature="8117:8175" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="11084:11134" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="11269:11307" ph="select buid sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="11685:11717" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="12144:12217" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="12312:12385" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="12482:12550" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="12951:12989" ph="select count... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="13051:13094" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13159:13201" ph="select count... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="13265:13307" ph="select count... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="13370:13437" ph="select count... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="14053:14107" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="14281:14313" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="14873:14940" ph="select *from... sl_ydls" />
+            <marker date="1524047934813" expanded="true" signature="17714:17763" ph="select *from... sl_sjx" />
+            <marker date="1524047934813" expanded="true" signature="18521:18574" ph="select *from... sl_collect" />
+            <marker date="1524047934813" expanded="true" signature="19206:19278" ph="select count... sl_pinglun" />
+            <marker date="1524047934813" expanded="true" signature="19698:19769" ph="select *from... sl_xiaoxi" />
+            <marker date="1524047934813" expanded="true" signature="25076:25105" ph="select * fro... sl_roll_picture" />
+            <marker date="1524047934813" expanded="true" signature="27782:27905" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28303:28446" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="28845:28988" ph="select b.id " />
+            <marker date="1524047934813" expanded="true" signature="29386:29480" ph="select id as... " />
+            <marker date="1524047934813" expanded="true" signature="29885:29939" ph="select * fro... sl_city" />
+            <marker date="1524047934813" expanded="true" signature="32376:32408" ph="select *from... sl_member" />
+            <marker date="1524047934813" expanded="true" signature="32731:32780" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33271:33321" ph="select *from... sl_guanzhu" />
+            <marker date="1524047934813" expanded="true" signature="33385:33434" ph="delete from " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/api/SmsController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
